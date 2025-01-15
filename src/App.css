@@ -1,0 +1,104 @@
+body, html {
+  background: radial-gradient(circle, #171717, #000000); /* Dark to lighter gray gradient */
+  height: 100vh; /* Make sure the gradient covers the full viewport height */
+  margin: 0; /* Remove default margin */
+  overflow: hidden;
+  
+}
+
+.scroll-content-container {
+  position: absolute;
+  left: 0; /* Align to the left */
+  width: 66.67%; /* 2/3 of the page width */
+  height: 100%; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* White text for contrast */
+  overflow-y: hidden;
+  z-index: 1; /* Ensure it's above the background */
+}
+
+.cirdiv {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  margin-left: 75%;
+  justify-content: flex-end; /* Align the CircularDiv to the right */
+  align-items: flex-end; /* Align it to the bottom */
+  position: relative;
+  /* background-color: #fff; */
+}
+
+.PieChart {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg); /* Rotate the disc by 180 degrees */
+  width: 100%;
+  height: 50%; /* Only display top half of the pie chart */
+  z-index: 0; /* Ensure the pie chart is at the bottom layer */
+  transition: transform 1s ease-in-out; /* Smooth rotation transition */
+}
+
+.trial{
+  background-color: white;
+  
+}
+
+@media (max-width: 768px) {
+
+  html, body{
+    display: flex;
+    align-items: center;
+  }
+  .cirdiv{
+    width: 100vw;
+    margin-top: 120vh;
+    margin-left: 0px;
+    rotate: 90deg;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #fff; */
+    /* display: none; */
+
+  }
+
+  .PieChart{
+    /* width: 100%; */
+    /* align-self: ; */
+    /* height: 400vh; */
+  }
+
+  .scroll-content-container {
+    top: 0%;
+    width: 100%;
+    height: 80vh;
+  }
+
+}
+
+
+/* Mobile responsive design */
+/* @media (max-width: 768px) {
+  body, html{
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  
+
+  .cirdiv {
+    position: absolute;
+    height: 20vh;
+    bottom: 0;
+    bottom: -50%;
+    right: -15%;
+    margin: 0 auto; 
+  }
+
+  .PieChart{
+    bottom: -50%;
+  }
+} */

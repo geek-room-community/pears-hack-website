@@ -1,0 +1,124 @@
+.top-logo-pagenm {
+    position: fixed;
+    display: flex;
+    top: 30px;
+    left: 100px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2A2A2A;
+    width: 600px;
+    /* width: fit-content; */
+    border-radius: 50px;
+  }
+  
+  .logos {
+    display: flex;
+    gap: 20px; /* Space between the logos */
+    background-color: #242323;
+    /* padding: 10px; */
+    padding-left: 22.5px;
+    border-radius: 50px;
+    padding-right: 20px;
+    height: 85px;
+    width: 225px;
+    align-items: center;
+  }
+
+  #cross{
+    height: 50px;
+    margin-left: 4px;
+  }
+
+  .logos img{
+    height: 55px;
+  }
+  
+  .pagenm {
+    color: white; /* Text color for better contrast */
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-right: 20px;
+    font-weight: 700;
+    font-size: xx-large;
+  }
+
+  .top-logo-pagenm-mobile{
+    display: none;
+  }
+
+  /* Base styles for navigation buttons */
+.nav-button {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none; /* Hidden by default */
+}
+
+/* Hover effects */
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+/* Positioning */
+.nav-button-left {
+  left: 0;
+  margin-left: 10px;
+}
+
+.nav-button-right {
+  right: 0;
+  margin-right: 10px;
+}
+
+/* Mobile view: Make buttons visible */
+
+
+  @media only screen and (max-width: 768px) {
+
+    .nav-button {
+      display: block; /* Show buttons only on mobile */
+    }
+    
+    .top-logo-pagenm{
+      display: none;
+    }
+    .top-logo-pagenm-mobile{
+      position: fixed;
+      margin: 0 auto;
+      display: flex;
+      gap: 50px;
+      justify-content: space-between;
+      height: 35px;
+      width: 75vw;
+      top: 25px;
+      background-color: #242323;
+      padding: 10px 20px;
+      border-radius: 50px;
+    }
+
+    .pears-logo-m{
+
+      left: 0px;
+    }
+
+    .pagenm-mobile{
+    font-weight: 600;
+    font-size: large;
+    align-self: center;
+    width: 50vw;
+    /* margin-left: 25px; */
+    }
+  }
