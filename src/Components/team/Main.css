@@ -1,0 +1,9 @@
+.team {
+  margin: auto;
+  min-width: 40vw;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-top: 10%;
+}
