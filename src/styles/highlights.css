@@ -1,0 +1,118 @@
+.highlights-container {
+  display: grid;
+  grid-template-areas:
+    "top top top"
+    "top top top"
+    "left middle right"
+    "bottom-left middle right";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 0.9fr 0.9fr;
+  gap: 1rem;
+  width: calc(100% - 15rem);
+  max-width: 70rem;
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 65vh;
+}
+
+.grid-item {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.9rem;
+}
+
+.grid-item.top {
+  grid-area: top;
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.grid-item.small.left {
+  grid-area: left;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.grid-item.tall.bottom-left {
+  grid-area: bottom-left;
+  grid-column: span 1;
+  grid-row: span 2;
+  height: calc(100% + 1rem);
+}
+
+.grid-item.tall.middle {
+  grid-area: middle;
+  grid-column: span 1;
+  grid-row: span 2;
+  height: calc(100% + 1rem);
+}
+
+.grid-item.tall.right {
+  grid-area: right;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+/* Mobile view styling */
+@media (max-width: 768px) {
+  .highlights-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 0.7rem;
+    width: 80%;
+    margin: 0 auto;
+    height: 50vh;
+  }
+
+  .grid-item {
+    overflow: hidden;
+    border-radius: 0.3rem;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .grid-item.top {
+    grid-column: span 2;
+    grid-row: 1;
+    height: calc(10vh + 2rem);
+  }
+
+  .grid-item.small.left {
+    grid-column: 1;
+    grid-row: 2;
+    height: calc(20vh - 1rem);
+  }
+
+  .grid-item.tall.bottom-left {
+    grid-column: 2;
+    grid-row: 2;
+    height: calc(20vh - 1rem);
+  }
+
+  .grid-item.tall.middle {
+    grid-column: 1;
+    grid-row: 3;
+    height: calc(20vh - 1rem);
+  }
+
+  .grid-item.tall.right {
+    grid-column: 2;
+    grid-row: 3;
+    height: calc(20vh - 1rem);
+  }
+}
