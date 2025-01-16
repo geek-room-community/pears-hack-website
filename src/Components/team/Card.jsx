@@ -1,5 +1,6 @@
 import React from "react";
 import "./Card.css";
+import ButtonIcon from "../../SVGs/Button.svg";
 
 function Card({ title, version }) {
   if (version === 1) {
@@ -8,7 +9,7 @@ function Card({ title, version }) {
         <div className="circle"></div>
         <div className="card-text">{title}</div>
         <div style={{ paddingRight: "30px" }}>
-          <img src="./button.svg" alt="arrow" height={30} width={30} />
+          <img src={ButtonIcon} alt="arrow" height={30} width={30} />
         </div>
       </div>
     );
@@ -16,7 +17,7 @@ function Card({ title, version }) {
     return (
       <div className="card" style={{ position: "relative", left: "10%" }}>
         <div style={{ paddingLeft: "30px" }}>
-          <img src="./button.svg" alt="arrow" height={30} width={30} />
+          <img src={ButtonIcon} alt="arrow" height={30} width={30} />
         </div>
         <div className="card-text">{title}</div>
         <div className="circle"></div>

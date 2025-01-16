@@ -1,0 +1,32 @@
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: x-small;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.member-name {
+  font-weight: bolder;
+  font-size: xx-large;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.member-card {
+  border-radius: 100px;
+  background-color: #272727;
+  padding: 7px;
+  display: flex;
+  gap: 20px;
+  padding-right: 65px;
+}
