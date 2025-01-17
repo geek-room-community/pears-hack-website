@@ -15,10 +15,10 @@
 
 .member-name {
   font-weight: bolder;
-  font-size: xx-large;
   text-align: left;
   display: flex;
   flex-direction: column;
+  margin-left: 40px;
   gap: 5px;
 }
 
@@ -27,6 +27,14 @@
   background-color: #272727;
   padding: 7px;
   display: flex;
+  align-items: center;
   gap: 20px;
   padding-right: 65px;
+  margin: 10px 0;
+}
+
+.member-card-circle {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #818181;
 }

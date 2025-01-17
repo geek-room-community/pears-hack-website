@@ -4,16 +4,32 @@ import LinkedinIcon from "../../SVGs/LinkedIn.svg";
 import GithubIcon from "../../SVGs/GitHub.svg";
 
 function TeamMembersCard({ name, github, linkedin, size }) {
-  let cardstyling = {};
+  let cardstyling;
+  let circlestyling;
+  let namestyling;
   switch (size) {
     case 3:
       cardstyling = {
         marginLeft: "50%",
+        width: "300px",
+      };
+      circlestyling = {
+        height: "75px",
+      };
+      namestyling = {
+        fontSize: "x-large",
       };
       break;
     case 2:
       cardstyling = {
         marginLeft: "25%",
+        width: "350px",
+      };
+      circlestyling = {
+        height: "75px",
+      };
+      namestyling = {
+        fontSize: "x-large",
       };
       break;
     case 1:
@@ -21,16 +37,22 @@ function TeamMembersCard({ name, github, linkedin, size }) {
         border: "1px solid white",
         boxShadow: "0px 10px 20px rgba(255, 255, 255, 0.3)",
         width: "400px",
-        height: "",
       };
+      circlestyling = {
+        height: "100px",
+      };
+      namestyling = {
+        fontSize: "xx-large",
+      };
+      break;
     default:
       break;
   }
   return (
     <div className="member-card" style={cardstyling}>
-      <div className="circle"></div>
+      <div className="member-card-circle" style={circlestyling}></div>
       <div className="member-name">
-        <div>{name}</div>
+        <div style={namestyling}>{name}</div>
         {size === 1 ? (
           <div className="socials">
             <a href={github} className="social-links">

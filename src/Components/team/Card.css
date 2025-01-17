@@ -10,7 +10,7 @@
 .circle {
   height: 75px;
   aspect-ratio: 1;
-  border-radius: 100px;
+  border-radius: 50%;
   background-color: #818181;
 }
 
