@@ -22,6 +22,19 @@
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
+  transform: scale(0.8) translateY(50px);
+  animation: fadeInAssemble 1s ease-out forwards;
+}
+
+@keyframes fadeInAssemble {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
 .grid-item img {
@@ -33,7 +46,7 @@
 }
 
 .grid-item img:hover {
-  transform: scale(1.1); /* Slightly zoom in the image */
+  transform: scale(1.1);
 }
 
 .grid-item.top {

@@ -3,7 +3,7 @@ import '../styles/highlights.css';
 import high1 from '../assets/highlights/high1.jpg';
 import high2 from '../assets/highlights/high9.jpg';
 import high3 from '../assets/highlights/high6.jpg';
-import high4 from '../assets/highlights/high4.JPG';
+import high4 from '../assets/highlights/high8.jpg';
 import high5 from '../assets/highlights/high5.jpg';
 
 const Highlights = () => {
