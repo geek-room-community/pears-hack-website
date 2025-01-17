@@ -29,6 +29,11 @@
   height: 100%;
   object-fit: cover;
   border-radius: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+  transform: scale(1.1); /* Slightly zoom in the image */
 }
 
 .grid-item.top {
