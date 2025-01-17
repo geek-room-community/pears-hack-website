@@ -4,18 +4,30 @@ import LinkedinIcon from "../../SVGs/LinkedIn.svg";
 import GithubIcon from "../../SVGs/GitHub.svg";
 
 function TeamMembersCard({ name, github, linkedin, size }) {
+  let cardstyling = {};
+  switch (size) {
+    case 3:
+      cardstyling = {
+        marginLeft: "50%",
+      };
+      break;
+    case 2:
+      cardstyling = {
+        marginLeft: "25%",
+      };
+      break;
+    case 1:
+      cardstyling = {
+        border: "1px solid white",
+        boxShadow: "0px 10px 20px rgba(255, 255, 255, 0.3)",
+        width: "400px",
+        height: "",
+      };
+    default:
+      break;
+  }
   return (
-    <div
-      className="member-card"
-      style={
-        size === 1
-          ? {
-              border: "1px solid white",
-              boxShadow: "0px 10px 20px rgba(255, 255, 255, 0.3)",
-            }
-          : null
-      }
-    >
+    <div className="member-card" style={cardstyling}>
       <div className="circle"></div>
       <div className="member-name">
         <div>{name}</div>

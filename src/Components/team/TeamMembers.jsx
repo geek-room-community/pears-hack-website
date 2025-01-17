@@ -1,9 +1,10 @@
 import React from "react";
 import TeamMembersCard from "./TeamMembersCard";
+import "./TeamMembers.css";
 
-function TeamMembers({ name, github, linkedin }) {
+function TeamMembers() {
   return (
-    <div>
+    <div className="team-members">
       <TeamMembersCard
         name={"Darsh Jain"}
         github={"sparky0520"}
@@ -27,12 +28,6 @@ function TeamMembers({ name, github, linkedin }) {
         github={"sparky0520"}
         linkedin={"123"}
         size={2}
-      />
-      <TeamMembersCard
-        name={"Darsh Jain"}
-        github={"sparky0520"}
-        linkedin={"123"}
-        size={3}
       />
       <TeamMembersCard
         name={"Darsh Jain"}
