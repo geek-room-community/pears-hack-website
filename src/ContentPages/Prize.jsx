@@ -181,7 +181,7 @@ const Prize = () => {
         `}
       </style>
       <div style={containerStyle} className="container-style"> 
-        <div style={gridStyle} className="prize-grid">
+        <div style={gridStyle} className="prize-grid"> 
           {/* AirPods Card */}
           <div style={cardStyle} className="prize-card">
             <div style={imageContainerStyle} className="prize-image-container">
