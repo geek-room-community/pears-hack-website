@@ -9,16 +9,16 @@ function Card({ title, version }) {
       <div className="card">
         <div className="circle"></div>
         <div className="card-text">{title}</div>
-        <Link to={"/lead-organisers"} style={{ paddingRight: "30px" }}>
-          <img src={ButtonIcon} alt="arrow" height={30} width={30} />
+        <Link to={"/lead-organisers"} className="team-card-v1">
+          <img src={ButtonIcon} alt="arrow" className="team-card-arrow" />
         </Link>
       </div>
     );
   } else {
     return (
-      <div className="card" style={{ position: "relative", left: "10%" }}>
-        <Link to={"/lead-organisers"} style={{ paddingLeft: "30px" }}>
-          <img src={ButtonIcon} alt="arrow" height={30} width={30} />
+      <div className="card">
+        <Link to={"/lead-organisers"} className="team-card-v2">
+          <img src={ButtonIcon} alt="arrow" className="team-card-arrow" />
         </Link>
         <div className="card-text">{title}</div>
         <div className="circle"></div>

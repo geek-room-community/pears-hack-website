@@ -4,63 +4,45 @@ import LinkedinIcon from "../../SVGs/LinkedIn.svg";
 import GithubIcon from "../../SVGs/GitHub.svg";
 
 function TeamMembersCard({ name, github, linkedin, size }) {
-  let cardstyling;
-  let circlestyling;
-  let namestyling;
+  let TeamMemberCardClass = "member-card ";
+  let TeamMemberCircleClass = "member-card-circle ";
+  let TeamMemberNameClass = "";
   switch (size) {
     case 3:
-      cardstyling = {
-        marginLeft: "50%",
-        width: "300px",
-      };
-      circlestyling = {
-        height: "75px",
-      };
-      namestyling = {
-        fontSize: "x-large",
-      };
+      TeamMemberCardClass += "team-member-card-3";
+      TeamMemberCircleClass += "team-member-circle-3";
+      TeamMemberNameClass += "team-member-name-3";
       break;
     case 2:
-      cardstyling = {
-        marginLeft: "25%",
-        width: "350px",
-      };
-      circlestyling = {
-        height: "75px",
-      };
-      namestyling = {
-        fontSize: "x-large",
-      };
+      TeamMemberCardClass += "team-member-card-2";
+      TeamMemberCircleClass += "team-member-circle-2";
+      TeamMemberNameClass += "team-member-name-2";
       break;
     case 1:
-      cardstyling = {
-        border: "1px solid white",
-        boxShadow: "0px 10px 20px rgba(255, 255, 255, 0.3)",
-        width: "400px",
-      };
-      circlestyling = {
-        height: "100px",
-      };
-      namestyling = {
-        fontSize: "xx-large",
-      };
+      TeamMemberCardClass += "team-member-card-1";
+      TeamMemberCircleClass += "team-member-circle-1";
+      TeamMemberNameClass += "team-member-name-1";
       break;
     default:
       break;
   }
   return (
-    <div className="member-card" style={cardstyling}>
-      <div className="member-card-circle" style={circlestyling}></div>
+    <div className={TeamMemberCardClass}>
+      <div className={TeamMemberCircleClass}></div>
       <div className="member-name">
-        <div style={namestyling}>{name}</div>
+        <div className={TeamMemberNameClass}>{name}</div>
         {size === 1 ? (
           <div className="socials">
             <a href={github} className="social-links">
-              <img src={GithubIcon} height={20} width={20} alt="" />{" "}
+              <img src={GithubIcon} className="team-member-link-logo" alt="" />{" "}
               <div>Github</div>
             </a>
             <a href={linkedin} className="social-links">
-              <img src={LinkedinIcon} height={20} width={20} alt="" />{" "}
+              <img
+                src={LinkedinIcon}
+                className="team-member-link-logo"
+                alt=""
+              />{" "}
               <div>Linkedin</div>
             </a>
           </div>
