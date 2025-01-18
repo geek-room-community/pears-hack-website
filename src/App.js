@@ -10,15 +10,17 @@ function App() {
   return (
     <>
       <div className="scroll-content-container">
+        <AboutUs /> {/* Replace with your content pages */}
         <ScrollContent
           totalIndexes={10}
           onIndexChange={(index) => setActiveIndex(index)} // Update active index
         />
       </div>
-
+      
       <div className="cirdiv">
         <PieChart activeIndex={activeIndex - 5} />
       </div>
+      
     </>
   );
 }
