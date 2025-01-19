@@ -95,7 +95,8 @@ font-family: monospace;
   text-align: center;
   white-space: nowrap; /* Prevents text from wrapping */
   line-height: 1; /* Ensures the text is vertically aligned with the icon */
-  padding-bottom: 36px;
+  padding-bottom: 30px;
+  margin-top: 15px;
 }
 
 .title-container {
