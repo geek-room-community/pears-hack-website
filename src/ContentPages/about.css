@@ -273,6 +273,7 @@
   
     .title {
       font-size: 40px;
+      flex-direction: row;
     }
   
     .image-wrapper {
@@ -308,6 +309,7 @@
   
     .title {
       font-size: 32px;
+      flex-direction: row;
     }
   
     .image-wrapper {
