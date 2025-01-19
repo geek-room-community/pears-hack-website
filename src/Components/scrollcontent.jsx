@@ -78,29 +78,33 @@ const ScrollContent = ({ totalIndexes, onIndexChange }) => {
           <img src={GRLogo} alt="GRLogo" />
         </div>
         <div className="pagenm">
-          {[
-            "HOME",
-            "ABOUT US",
-            "PRIZES",
-            "HIGHLIGHTS",
-            "JUDGING PANEL",
-            "TEAM",
-            "CONTACT US",
-          ][currentIndex]}
+          {
+            [
+              "HOME",
+              "ABOUT US",
+              "PRIZES",
+              "HIGHLIGHTS",
+              "JUDGING PANEL",
+              "TEAM",
+              "CONTACT US",
+            ][currentIndex]
+          }
         </div>
       </div>
       <div className="top-logo-pagenm-mobile">
-        <img src={PearLogo} alt="PearsLogo" id="pears-logo-m"/>
+        <img src={PearLogo} alt="PearsLogo" id="pears-logo-m" />
         <div className="pagenm-mobile">
-          {[
-            "HOME",
-            "ABOUT US",
-            "PRIZES",
-            "HIGHLIGHTS",
-            "JUDGING PANEL",
-            "TEAM",
-            "CONTACT US",
-          ][currentIndex]}
+          {
+            [
+              "HOME",
+              "ABOUT US",
+              "PRIZES",
+              "HIGHLIGHTS",
+              "JUDGING PANEL",
+              "TEAM",
+              "CONTACT US",
+            ][currentIndex]
+          }
         </div>
         <img src={GRLogo} alt="GRLogo" />
       </div>
