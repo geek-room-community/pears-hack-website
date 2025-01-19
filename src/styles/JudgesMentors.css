@@ -116,24 +116,24 @@
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 710px) {
   /* Adjust main panel container for smaller screens */
   .main-panels {
     height: auto; 
-    padding: 1rem;
     width: 100%;
     justify-content: center; 
+    margin-bottom: 4.1rem;
+    margin-top: 0.1px;
   }
 
   /* Buttons container */
   .buttonss {
     align-items: center;
-    gap: 12px; 
+    gap: 10px; 
   }
 
   /* Individual buttons */
   .buttonsss {
-    padding: 8px 12px; 
     border-radius: 2.4rem; 
     justify-content: center;
     width: 200px; 
@@ -142,19 +142,22 @@
   /* Button heights for mobile */
   .buttonsss:nth-child(1),
   .buttonsss:nth-child(5) {
-    height: 60px; 
+    height: 39px; 
+    padding: 0.8rem 1.4rem;
     margin-left: 6rem;
   }
 
   .buttonsss:nth-child(2),
   .buttonsss:nth-child(4) {
-    height: 65px;
-    margin-left:2rem
+    height: 39px;
+    margin-left:2rem;
+    padding: 0.8rem 1.4rem;
   }
 
   .buttonsss:nth-child(3) {
-    height: 70px;
+    height: 39px;
     margin-left: 0.05rem;
+    padding: 0.8rem 1.4rem;
   }
 
   /* Circular disc container */

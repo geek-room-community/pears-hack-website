@@ -130,12 +130,8 @@ span {
   }
 
   .back-button {
-    padding: 0.3rem 0.9rem;
-    margin-top: 10px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3rem;
+    margin-top: 4.4rem;
+    margin-left: 2.4rem;
   }
 
   .back-arrow {
@@ -156,7 +152,7 @@ span {
   }
 
   .panel-span-title {
-    font-size: 0.95rem; 
+    font-size: 0.8rem; 
     text-align: center; 
   }
 }
@@ -189,7 +185,7 @@ span {
   }
 
   .panel-span-title {
-    font-size: 0.9rem; 
+    font-size: 0.8rem; 
     text-align: center; 
   }
 }

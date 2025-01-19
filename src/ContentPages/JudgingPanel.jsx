@@ -16,7 +16,6 @@ const JudgingPanel = () => {
           <button
             className="back-button"
             onClick={() => setActivePanel("judgingPanel")}
-            style={{ marginTop: "50px" }}
           >
             <img src={Frame} alt="Back-Arrow" className="back-arrow" />
           </button>
@@ -31,7 +30,6 @@ const JudgingPanel = () => {
           <button
             className="back-button"
             onClick={() => setActivePanel("judgingPanel")}
-            style={{ marginTop: "50px" }}
           >
             <img src={Frame} alt="Back-Arrow" className="back-arrow" />
           </button>
