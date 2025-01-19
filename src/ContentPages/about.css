@@ -90,7 +90,8 @@ color: #22d3ee;
 font-size: 24px;
 font-family: monospace;
 }
-.title{
+
+.titlee{
   flex-direction: row;
   text-align: center;
   white-space: nowrap; /* Prevents text from wrapping */
@@ -122,7 +123,7 @@ font-size: 24px;
 font-family: monospace;
 }
 
-.title {
+.titlee {
 color: greenyellow;
 font-size: 50px;
 font-weight: 500;
@@ -169,21 +170,21 @@ border-radius: 8px;
    
 
 /* Geek Room title styles */
-.geek-title .title span:nth-child(1),
-.geek-title .title span:nth-child(2),
-.geek-title .title span:nth-child(3),
-.geek-title .title span:nth-child(4) {
+.geek-title .titlee span:nth-child(1),
+.geek-title .titlee span:nth-child(2),
+.geek-title .titlee span:nth-child(3),
+.geek-title .titlee span:nth-child(4) {
 color: #fb923c; /* GEEK in orange */
 }
 
-.geek-title .title span:nth-child(5) {
+.geek-title .titlee span:nth-child(5) {
 color: #ffffff; /* Space in white */
 }
 
-.geek-title .title span:nth-child(6),
-.geek-title .title span:nth-child(7),
-.geek-title .title span:nth-child(8),
-.geek-title .title span:nth-child(9) {
+.geek-title .titlee span:nth-child(6),
+.geek-title .titlee span:nth-child(7),
+.geek-title .titlee span:nth-child(8),
+.geek-title .titlee span:nth-child(9) {
 color: #22d3ee; /* ROOM in cyan */
 }
 
@@ -200,7 +201,7 @@ color: #4ade80; /* ABOUT US in green */
   padding: 1.25rem;
   border-radius: 20px;
 }
-.title {
+.titlee {
   font-size: 32px; /* Further reduce font size for mobile */
 }
 
@@ -283,7 +284,7 @@ color: #4ade80; /* ABOUT US in green */
     width: 25px;
   }
 
-  .title {
+  .titlee {
     font-size: 32px;
     flex-direction: row;
   }
@@ -319,7 +320,7 @@ color: #4ade80; /* ABOUT US in green */
     width: 20px;
   }
 
-  .title {
+  .titlee {
     font-size: 32px;
     flex-direction: row;
   }

@@ -65,7 +65,7 @@ const AboutUs = () => {
           <div className="title-code-brackets">
             <img src={currentContent.logo} alt="" height="50px"/>
           </div>
-          <div className="title">
+          <div className="titlee">
             {currentContent.title.split('').map((letter, index) => (
               <span key={index}>{letter}</span>
             ))}
