@@ -4,8 +4,8 @@ import "./PieChart.css";
 import logo1 from "../SVGs/Group 295.svg";
 import logo2 from "../SVGs/Info.svg";
 import logo3 from "../SVGs/Trophy.svg";
-import logo4 from "../SVGs/Management.svg";
-import logo5 from "../SVGs/Clip Appearance.svg";
+import logo4 from "../SVGs/Clip Appearance.svg";
+import logo5 from "../SVGs/Management.svg";
 import logo6 from "../SVGs/User Groups.svg";
 import logo7 from "../SVGs/Phone Message.svg";
 
@@ -64,7 +64,7 @@ const PieChart = ({ activeIndex }) => {
             height: `${2 * radius}px`,
             borderRadius: '50%',
             backgroundColor: '#171717',
-            transition: 'transform 1s ease-in-out',
+            transition: 'transform 0.25s ease-in-out',
           }}
         >
           {Array.from({ length: numberOfElements }, (_, index) => {

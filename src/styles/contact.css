@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=VT323&display=swap');
+
+.contact-container {
+  background: #2A2A2A;
+  box-shadow: 0px 0px 22.3px -5px #000000;
+  padding: 2rem;
+  border-radius: 38px;
+  color: white;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 90%;
+  margin-right: 150px;
+  margin-top: 50px;
+}
+
+.contact-heading {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
+  margin-top: 0;
+  line-height: 1.1;
+  display: flex; 
+  gap: 0.5rem; 
+  align-items: baseline; 
+  flex-wrap: wrap; 
+  align-content: center; 
+  justify-content: center;
+}
+
+.highlight {
+  color: #B6DD48;
+  display: inline;
+  font-size : 2.5rem;
+}
+
+.contact-intro, .social-intro {
+  font-family: 'VT323', monospace;
+  margin-bottom: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  text-align: left;
+}
+
+.contact-info, .social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.contact-item, .social-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 0.25rem 0;
+  word-break: break-word;
+}
+
+.contact-text, .social-text {
+  font-family: 'VT323', monospace;
+  font-size: clamp(1rem, 2.2vw, 1.4rem);
+}
+
+.contact-icon, .social-icon {
+  width: clamp(18px, 4vw, 22px);
+  height: clamp(18px, 4vw, 22px);
+  flex-shrink: 0;
+}
+
+.contact-item:hover, .social-item:hover {
+  color: #B6DD48;
+}
+
+@media (max-width: 768px) {  
+  .contact-container {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 38px;
+    width: 85%;
+  }
+}
+
+@media (max-width: 390px) {  
+  .contact-container {
+    margin: 1.5rem auto;
+    padding: 0.5rem;
+    border-radius: 38px;
+    width: 80%;
+    height: auto; 
+    min-height: 250px;
+  }
+  
+  .contact-heading {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .highlight {
+    font-size: 1.5rem;
+  }
+  
+  .contact-info, .social-links {
+    gap: 0.5rem;
+  }
+  
+  .contact-intro, .social-intro {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-container {
+    padding: 1rem;
+    width: 90%;
+  }
+  
+  .contact-item, .social-item {
+    gap: 0.5rem;
+  }
+  
+  .contact-text, .social-text {
+    font-size: 0.9rem;
+  }
+}
