@@ -90,6 +90,9 @@ color: #22d3ee;
 font-size: 24px;
 font-family: monospace;
 }
+.title{
+  flex-direction: row;
+}
 
 .title-container {
 display: flex;
