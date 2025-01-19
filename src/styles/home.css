@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=VT323&display=swap");
+
+.home-container {
+  color: white;
+  width: 800px;
+}
+
+.title {
+  font-family: "Bebas Neue";
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 85px;
+  line-height: 1.3;
+  letter-spacing: 7px;
+}
+
+#gleen {
+  color: #b6dd48;
+}
+
+.topimg {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-bottom: -10px;
+}
+
+.registerbtn {
+  border-color: #b6dd48;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #b6dd48;
+  padding: 15px 50px;
+  font-size: 40px;
+  border-width: 5px;
+}
+
+.registerbttn {
+  margin-left: -350px;
+  margin-top: 5%;
+}
+
+.lineptitle {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.leftline {
+  width: 10px;
+  background-color: #ffffff;
+  height: 280px;
+  border-radius: 50px;
+  margin-top: 15px;
+}
+
+.mobtoimg {
+  display: none;
+}
+
+.timer {
+  font-family: "Bebas Neue";
+  justify-content: center;
+  border-color: #b6dd48;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #b6dd48;
+  padding: 15px 50px;
+  font-size: 40px;
+}
+
+.timer-container{
+  margin-left: 8%;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    margin-top: 1vh;
+    width: 80vw;
+    height: 60vh;
+    margin-bottom: 25%;
+    /* background-color: #ffffff5f; */
+  }
+
+  .lineptitle {
+    gap: 7%;
+  }
+
+  .title {
+    margin-top: 40px;
+    font-size: 55px;
+    line-height: 1.1;
+  }
+
+  .topimg img {
+    height: 40px;
+  }
+
+  .topimg {
+    margin-bottom: 0;
+    gap: 0;
+    display: none;
+  }
+
+  #pears {
+    margin-right: 85px;
+    margin-left: 15px;
+  }
+
+  
+  .mobtoimg {
+    display: flex;
+    flex-direction: row;
+    /* margin-left: -30px; */
+  }
+
+  .mobtoimg img {
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .leftline {
+    margin-left: 5px;
+    margin-top: 40px;
+    height: 180px;
+  }
+
+  .timer-container {
+    margin: 20px auto;
+  }
+}
+
+@media (min-height: 376px) and (max-width: 767px){
+
+  .home-container{
+    margin-bottom: 0;
+    margin-top: 15%;
+  }
+
+  .title{
+    line-height: 1.3;
+  }
+
+  .leftline{
+    height: 200px;
+  }
+}
+
+@media (max-height: 668px){
+  .home-container{
+    margin-bottom: 15%;
+    margin-top: 0;
+  }
+
+  .title{
+    line-height: 1;
+    /* font-size: ; */
+  }
+
+  .title{
+    font-size: 50px;
+  }
+
+  .leftline{
+    height: 150px;
+  }
+}
