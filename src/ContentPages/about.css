@@ -95,14 +95,14 @@ font-family: monospace;
   text-align: center;
   white-space: nowrap; /* Prevents text from wrapping */
   line-height: 1; /* Ensures the text is vertically aligned with the icon */
-  margin-bottom: 12px;
+  padding-bottom: 36px;
 }
 
 .title-container {
 display: flex;
 justify-content: center;
-margin-bottom: 24px;
-flex-direction: row;
+margin-bottom: 2px;
+
 }
 
 .title-wrapper {
