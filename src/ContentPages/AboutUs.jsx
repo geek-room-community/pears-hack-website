@@ -82,7 +82,7 @@ const AboutUs = () => {
         </p>
 
         {/* Image grid */}
-        <div className={`image-grid ${activeContent === 'pear' ? 'pear-grid' : 'geek-grid'}`}>
+        {/* <div className={`image-grid ${activeContent === 'pear' ? 'pear-grid' : 'geek-grid'}`}>
           {currentContent.images.map((img, index) => (
             <div key={index} className="image-wrapper">
               <img
@@ -92,7 +92,7 @@ const AboutUs = () => {
               />
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
