@@ -9,10 +9,9 @@
   max-width: 400px;
   margin: 0 auto;
   width: 90%;
- margin-right: 150px;
- margin-top : 50px;
+  margin-right: 150px;
+  margin-top: 50px;
 }
-
 
 .contact-heading {
   font-family: 'Bebas Neue', sans-serif;
@@ -20,10 +19,18 @@
   margin-bottom: 1rem;
   margin-top: 0;
   line-height: 1.1;
+  display: flex; 
+  gap: 0.5rem; 
+  align-items: baseline; 
+  flex-wrap: wrap; 
+  align-content: center; 
+  justify-content: center;
 }
 
 .highlight {
   color: #B6DD48;
+  display: inline;
+  font-size : 2.5rem;
 }
 
 .contact-intro, .social-intro {
@@ -70,36 +77,52 @@
 @media (max-width: 768px) {  
   .contact-container {
     margin: 2rem auto;
-    padding: 1.25rem;
-    border-radius: 20px;
+    padding: 1.5rem;
+    border-radius: 38px;
+    width: 85%;
   }
 }
 
 @media (max-width: 390px) {  
   .contact-container {
     margin: 1.5rem auto;
-    padding: 0.7rem;
+    padding: 0.5rem;
     border-radius: 38px;
-    width: 70%;
-    height :  250px;
+    width: 80%;
+    height: auto; 
+    min-height: 250px;
+  }
+  
+  .contact-heading {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .highlight {
+    font-size: 1.5rem;
   }
   
   .contact-info, .social-links {
-    gap: 0.1rem;
+    gap: 0.5rem;
   }
   
   .contact-intro, .social-intro {
-    margin-bottom: 0.02rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 320px) {
   .contact-container {
-    padding: 0.875rem;
-    width: 80%;
+    padding: 1rem;
+    width: 90%;
   }
   
   .contact-item, .social-item {
     gap: 0.5rem;
+  }
+  
+  .contact-text, .social-text {
+    font-size: 0.9rem;
   }
 }
