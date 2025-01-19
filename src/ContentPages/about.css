@@ -92,6 +92,10 @@ font-family: monospace;
 }
 .title{
   flex-direction: row;
+  text-align: center;
+  white-space: nowrap; /* Prevents text from wrapping */
+  line-height: 1; /* Ensures the text is vertically aligned with the icon */
+  margin-bottom: 12px;
 }
 
 .title-container {
@@ -102,13 +106,13 @@ flex-direction: row;
 }
 
 .title-wrapper {
-background-color: #2a2a2a;
-border-radius: 24px;
-padding: 4px 16px;
-display: flex;
-flex-direction: row;
-align-items: center;
-gap: 8px;
+  display: flex;
+  align-items: center; /* Aligns icon and title vertically */
+  justify-content: center;
+  gap: 8px; /* Spacing between the icon and title */
+  background-color: #2a2a2a;
+  border-radius: 24px;
+  padding: 4px 16px;
 }
 
 .title-code-brackets {
@@ -195,6 +199,9 @@ color: #4ade80; /* ABOUT US in green */
   padding: 1.25rem;
   border-radius: 20px;
 }
+.title {
+  font-size: 32px; /* Further reduce font size for mobile */
+}
 
 .image-grid {
   gap: 12px;
@@ -276,7 +283,7 @@ color: #4ade80; /* ABOUT US in green */
   }
 
   .title {
-    font-size: 40px;
+    font-size: 32px;
     flex-direction: row;
   }
 
