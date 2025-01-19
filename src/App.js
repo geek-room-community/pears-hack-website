@@ -4,6 +4,7 @@ import ScrollContent from './Components/scrollcontent';
 import PieChart from './Components/circulardiv';
 import './App.css';
 
+
 function App() {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -15,10 +16,11 @@ function App() {
           onIndexChange={(index) => setActiveIndex(index)} // Update active index
         />
       </div>
-
+      
       <div className="cirdiv">
         <PieChart activeIndex={activeIndex - 5} />
       </div>
+      
     </>
   );
 }
