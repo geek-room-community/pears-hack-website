@@ -14,7 +14,7 @@ import Cross from "../SVGs/Cross.svg";
 const ScrollContent = ({ totalIndexes, onIndexChange }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [scrollDistance, setScrollDistance] = useState(0);
-  const threshold = 600; // Scroll distance threshold for changing index
+  const threshold = 850; // Scroll distance threshold for changing index
 
   const pages = [
     <Home />,
@@ -106,19 +106,20 @@ const ScrollContent = ({ totalIndexes, onIndexChange }) => {
       </div>
       <div style={{ position: "relative", textAlign: "center", color: "#fff" }}>
         <button
-          className="nav-button nav-button-left"
+          className="nav-button nav-button-right"
           onClick={handlePrevious}
           disabled={currentIndex === 0}
         >
-          &#9664;
+          &#9654;
         </button>
         {pages[currentIndex]} {/* Dynamically render the page component */}
         <button
-          className="nav-button nav-button-right"
+          className="nav-button nav-button-left"
           onClick={handleNext}
           disabled={currentIndex === pages.length - 1}
         >
-          &#9654;
+          &#9664;
+          
         </button>
       </div>
     </>

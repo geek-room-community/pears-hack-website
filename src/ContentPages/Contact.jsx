@@ -1,6 +1,6 @@
 // ContactSection.jsx
 import React from 'react';
-import './contact.css';
+import '../styles/contact.css';
 import Email from "../SVGs/email.svg";
 import Web from "../SVGs/website.svg";
 import Instagram from "../SVGs/instagram.svg";
