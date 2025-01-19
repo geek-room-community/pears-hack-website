@@ -92,6 +92,7 @@ font-family: monospace;
 }
 
 .titlee{
+display:flex;
   flex-direction: row;
   text-align: center;
   white-space: nowrap; /* Prevents text from wrapping */
@@ -203,6 +204,7 @@ color: #4ade80; /* ABOUT US in green */
 }
 .titlee {
   font-size: 32px; /* Further reduce font size for mobile */
+display:flex
   flex-direction: row;
 }
 
@@ -286,6 +288,7 @@ color: #4ade80; /* ABOUT US in green */
   }
 
   .titlee {
+display:flex
     font-size: 32px;
     flex-direction: row;
   }
@@ -322,6 +325,7 @@ color: #4ade80; /* ABOUT US in green */
   }
 
   .titlee {
+display:flex;
     font-size: 32px;
     flex-direction: row;
   }
