@@ -18,7 +18,11 @@ function Card({ title, route, version }) {
     return (
       <div className="card">
         <Link to={route} className="team-card-v2">
-          <img src={ButtonIcon} alt="arrow" className="team-card-arrow" />
+          <img
+            src={ButtonIcon}
+            alt="arrow"
+            className="team-card-arrow team-card-arrow-inverted"
+          />
         </Link>
         <div className="card-text">{title}</div>
         <div className="circle"></div>

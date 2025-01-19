@@ -30,6 +30,10 @@
   width: 30px;
 }
 
+.team-card-arrow-inverted {
+  transform: rotate(180deg);
+}
+
 @media screen and (max-width: 768px) {
   .card {
     padding: 5px;
