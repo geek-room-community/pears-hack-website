@@ -1,160 +1,162 @@
 .logos {
-    display: flex;
-    gap: 10px; /* Space between the logos */
-    background-color: #242323;
-    /* padding: 10px; */
-    padding-left: 22.5px;
-    border-radius: 50px;
-    padding-right: 20px;
-    height: 60px;
-    width: 120px;
-    align-items: center;
-    margin-bottom: 24px;
-    justify-content: center;
-  }
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=VT323&display=swap');
+  display: flex;
+  gap: 10px; /* Space between the logos */
+  background-color: #242323;
+  /* padding: 10px; */
+  padding-left: 22.5px;
+  border-radius: 50px;
+  padding-right: 20px;
+  height: 60px;
+  width: 120px;
+  align-items: center;
+  margin-bottom: 24px;
+  justify-content: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=VT323&display=swap');
 
-  #cross{
-    height: 30px;
-    margin-left: 4px;
-  }
+#cross{
+  height: 30px;
+  margin-left: 4px;
+}
 .about-container {
-  position: relative;
-  max-width: 800px;
-  background: #2A2A2A;
-  box-shadow: 0px 0px 22.3px -5px #000000;
-  padding:24px;
-  border-radius: 38px;
-  color: white;
-  margin: 0 auto;
-  width: 90%;
- margin-right: 150px;
- margin-top : 50px;
+position: relative;
+max-width: 800px;
+background: #2A2A2A;
+box-shadow: 0px 0px 22.3px -5px #000000;
+padding:24px;
+border-radius: 38px;
+color: white;
+margin: 0 auto;
+width: 90%;
+margin-right: 150px;
+margin-top : 50px;
 }
 .logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem 0;
-    position: relative;
-  }
-  
-  .logo-button {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
-    position: relative;
-    margin: 0 10px;
-  }
-  
-  .logo-button img {
-    width: 30px;
-    height: auto;
-    filter: brightness(0) invert(1); /* Default white */
-    transition: filter 0.3s;
-  }
-  
-  .logo-button.active img {
-    filter: brightness(0) invert(0); /* Changes to black or covered color */ 
-  }
-  .logo-button.active {
-    background-color: rgb(243, 80, 4); /* Highlight active area */
-    border-radius: 50%;
-  }
-  
-  .logo-button:hover {
-    transform: scale(1.1);
-  }
-  
-.logo-separator {
-  color: #666;
-  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  position: relative;
 }
 
-.pear-logo {
-  width: 32px;
-  height: 32px;
-  background-color: #4ade80;
+.logo-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  position: relative;
+  margin: 0 10px;
+}
+
+.logo-button img {
+  width: 30px;
+  height: auto;
+  filter: brightness(0) invert(1); /* Default white */
+  transition: filter 0.3s;
+}
+
+.logo-button.active img {
+  filter: brightness(0) invert(0); /* Changes to black or covered color */ 
+}
+.logo-button.active {
+  background-color: rgb(243, 80, 4); /* Highlight active area */
   border-radius: 50%;
 }
 
+.logo-button:hover {
+  transform: scale(1.1);
+}
+
+.logo-separator {
+color: #666;
+font-size: 20px;
+}
+
+.pear-logo {
+width: 32px;
+height: 32px;
+background-color: #4ade80;
+border-radius: 50%;
+}
+
 .code-brackets {
-  color: #22d3ee;
-  font-size: 24px;
-  font-family: monospace;
+color: #22d3ee;
+font-size: 24px;
+font-family: monospace;
 }
 
 .title-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 24px;
+display: flex;
+justify-content: center;
+margin-bottom: 24px;
+flex-direction: row;
 }
 
 .title-wrapper {
-  background-color: #2a2a2a;
-  border-radius: 24px;
-  padding: 4px 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+background-color: #2a2a2a;
+border-radius: 24px;
+padding: 4px 16px;
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 8px;
 }
 
 .title-code-brackets {
-  color: #fb923c;
-  font-size: 24px;
-  font-family: monospace;
+color: #fb923c;
+font-size: 24px;
+font-family: monospace;
 }
 
 .title {
-  color: greenyellow;
-  font-size: 64px;
-  font-weight: 500;
+color: greenyellow;
+font-size: 64px;
+font-weight: 500;
 }
 
 .content-section {
-  text-align: center;
+text-align: center;
 }
 
 .description {
-  color: #d1d1d1;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 24px;
+color: #d1d1d1;
+font-size: 18px;
+line-height: 1.6;
+margin-bottom: 24px;
 }
 
 .image-grid {
-  display: grid;
-  gap: 16px;
+display: grid;
+gap: 16px;
 }
 
 .pear-grid {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
 }
 
 .geek-grid {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
 }
 
 .image-wrapper {
-  width: 100%;
-  height: 128px;
-  overflow: hidden;
+width: 100%;
+height: 128px;
+overflow: hidden;
 }
 
 .content-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 8px;
 }
 
 /* Geek Room title styles */
@@ -162,157 +164,159 @@
 .geek-title .title span:nth-child(2),
 .geek-title .title span:nth-child(3),
 .geek-title .title span:nth-child(4) {
-  color: #fb923c; /* GEEK in orange */
+color: #fb923c; /* GEEK in orange */
 }
 
 .geek-title .title span:nth-child(5) {
-  color: #ffffff; /* Space in white */
+color: #ffffff; /* Space in white */
 }
 
 .geek-title .title span:nth-child(6),
 .geek-title .title span:nth-child(7),
 .geek-title .title span:nth-child(8),
 .geek-title .title span:nth-child(9) {
-  color: #22d3ee; /* ROOM in cyan */
+color: #22d3ee; /* ROOM in cyan */
 }
 
 /* Pear title styles */
 .pear-title .title span {
-  color: #4ade80; /* ABOUT US in green */
+color: #4ade80; /* ABOUT US in green */
 }
 
 /* Additional styles for responsiveness */
 @media (max-width: 480px) {
+.about-container {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1.25rem;
+  border-radius: 20px;
+}
+
+.image-grid {
+  gap: 12px;
+}
+
+.image-wrapper {
+  height: 100px;
+}
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Adjust as needed */
+  height: 40px;
+  background-color: #2b2b2b; /* Default toggle background */
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0 auto; /* Center horizontally */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%; /* Half of the toggle container */
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-button.active {
+  background-color: #f27e50; /* Default orange color for Geek Room */
+  color: #ffffff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-button.active.pear {
+  background-color: #4caf50; /* Green color for Pears */
+}
+
+.toggle-button img {
+  width: 25px; /* Adjust icon size as needed */
+  height: auto;
+  filter: brightness(0) invert(1); /* Default white */
+}
+
+.toggle-button:not(.active) img {
+  opacity: 0.5; /* Dim inactive icon */
+  filter: brightness(0) invert(1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .about-container {
-    width: 100%;
-    margin: 2rem auto;
-    padding: 1.25rem;
+    padding: 16px;
     border-radius: 20px;
   }
 
-  .image-grid {
-    gap: 12px;
+  .logos {
+    width: 120px;
+    height: 50px;
+    gap: 8px;
+  }
+
+  .logo-button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .logo-button img {
+    width: 25px;
+  }
+
+  .title {
+    font-size: 40px;
+    flex-direction: row;
   }
 
   .image-wrapper {
     height: 100px;
   }
+
+  .description {
+    font-size: 16px;
+  }
 }
 
-.toggle-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px; /* Adjust as needed */
-    height: 40px;
-    background-color: #2b2b2b; /* Default toggle background */
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 0 auto; /* Center horizontally */
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .toggle-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%; /* Half of the toggle container */
-    height: 100%;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .toggle-button.active {
-    background-color: #f27e50; /* Default orange color for Geek Room */
-    color: #ffffff;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .toggle-button.active.pear {
-    background-color: #4caf50; /* Green color for Pears */
-  }
-  
-  .toggle-button img {
-    width: 25px; /* Adjust icon size as needed */
-    height: auto;
-    filter: brightness(0) invert(1); /* Default white */
-  }
-  
-  .toggle-button:not(.active) img {
-    opacity: 0.5; /* Dim inactive icon */
-    filter: brightness(0) invert(1);
+@media (max-width: 480px) {
+  .about-container {
+    width: 75%;
+    padding: 12px;
+    margin: 16px auto;
   }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .about-container {
-      padding: 16px;
-      border-radius: 20px;
-    }
-  
-    .logos {
-      width: 120px;
-      height: 50px;
-      gap: 8px;
-    }
-  
-    .logo-button {
-      width: 35px;
-      height: 35px;
-    }
-  
-    .logo-button img {
-      width: 25px;
-    }
-  
-    .title {
-      font-size: 40px;
-    }
-  
-    .image-wrapper {
-      height: 100px;
-    }
-  
-    .description {
-      font-size: 16px;
-    }
+  .logos {
+    width: 100px;
+    height: 40px;
+    gap: 6px;
   }
-  
-  @media (max-width: 480px) {
-    .about-container {
-      width: 75%;
-      padding: 12px;
-      margin: 16px auto;
-    }
-  
-    .logos {
-      width: 100px;
-      height: 40px;
-      gap: 6px;
-    }
-  
-    .logo-button {
-      width: 30px;
-      height: 30px;
-    }
-  
-    .logo-button img {
-      width: 20px;
-    }
-  
-    .title {
-      font-size: 32px;
-    }
-  
-    .image-wrapper {
-      height: 80px;
-    }
-  
-    .description {
-      font-size: 14px;
-    }
+
+  .logo-button {
+    width: 30px;
+    height: 30px;
   }
+
+  .logo-button img {
+    width: 20px;
+  }
+
+  .title {
+    font-size: 32px;
+    flex-direction: row;
+  }
+
+  .image-wrapper {
+    height: 80px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}
