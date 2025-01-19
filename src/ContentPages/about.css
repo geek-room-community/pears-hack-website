@@ -95,7 +95,7 @@ font-family: monospace;
   text-align: center;
   white-space: nowrap; /* Prevents text from wrapping */
   line-height: 1; /* Ensures the text is vertically aligned with the icon */
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   margin-top: 15px;
 }
 
@@ -124,7 +124,7 @@ font-family: monospace;
 
 .title {
 color: greenyellow;
-font-size: 64px;
+font-size: 50px;
 font-weight: 500;
 }
 
