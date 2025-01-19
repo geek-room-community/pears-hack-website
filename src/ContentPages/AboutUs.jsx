@@ -10,7 +10,7 @@ const AboutUs = () => {
 
   const geekRoomContent = {
     title: "GEEK ROOM",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    description: "Geek Room is a widespread coding community with over 25000+ active coders nationwide. It was started by three coding enthusiasts with the main objective to create a transparent community where sharing of ideas and helping other people is the main goal . Geek Room boasts of various hackathon winning teams, 6 independent institutes with Geek Room chapters and so much more.",
     images: [
       "/api/placeholder/200/150",
       "/api/placeholder/200/150",
@@ -22,7 +22,7 @@ const AboutUs = () => {
 
   const pearContent = {
     title: "PEARS",
-    description: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex Welcome to our innovative tech community where creativity meets code. We focus on building the next generation of tech leaders through hands-on experience and collaborative learning.",
+    description: " Pear by Holepunch is a combined Peer-to-Peer (P2P) Runtime, Development & Deployment tool Build, share & extend unstoppable, zero-infrastructure P2P applications for Desktop, Terminal & Mobile. Welcome to the Internet of Peers",
     images: [
       "/api/placeholder/200/150",
       "/api/placeholder/200/150",
