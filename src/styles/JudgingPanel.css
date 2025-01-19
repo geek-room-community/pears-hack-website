@@ -81,13 +81,13 @@ span {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0.4rem 0.6rem;
+  padding: 0.2rem 0.7rem;
   margin-top: 1rem;
 }
 
 .back-arrow {
   width: 18px; 
-  height: auto;
+  height: 2rem;
   margin-right: 8px; 
 }
 
@@ -130,14 +130,18 @@ span {
   }
 
   .back-button {
-    padding: 0.4rem 0.6rem;
+    padding: 0.3rem 0.9rem;
     margin-top: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
   }
 
   .back-arrow {
     width: 16px; 
-    margin-right: 6px; 
-    margin-top: 4px;
+    height: 2rem;
+   
   }
 
   .panel-info {
