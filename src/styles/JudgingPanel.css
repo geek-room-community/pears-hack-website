@@ -1,0 +1,191 @@
+/* General adjustments */
+.main-panel {
+  color: #fff;
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem; 
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #222;
+  border-radius: 4.8rem;
+  padding: 1.5rem 2.0rem; 
+  width: 100%; 
+  height: 80px;
+  gap: 25px;
+}
+
+.logo-judge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #818181;
+  margin-right: 3rem;
+  width: 90px; 
+  height: 90px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.panel-info {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 1.5rem; 
+  border: 2px solid #B6DD48;
+  border-radius: 4.8rem;
+  color: #B6DD48;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem; 
+  text-align: center; 
+}
+
+span {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.panel-span-title {
+  font-size: 1rem; 
+  color: #B6DD48;
+  font-weight: 300;
+  text-align: center; 
+}
+
+.back-button {
+  background-color: #222;
+  outline: none;
+  border: 2px solid #B6DD48;
+  color: #B6DD48;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.4rem 0.6rem;
+  margin-top: 1rem;
+}
+
+.back-arrow {
+  width: 18px; 
+  height: auto;
+  margin-right: 8px; 
+}
+
+.judge-title-panel-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem; 
+}
+
+.panel-info img {
+  width: 15px; 
+  height: auto; 
+}
+
+/* Mobile view adjustments */
+@media screen and (max-width: 768px) {
+  .main-panel {
+    padding: 1.5rem;
+  }
+
+  .buttons {
+    gap: 1.5rem;
+  }
+
+  .button {
+    height: 100px; 
+    padding: 1.2rem 2rem; 
+  }
+
+  .logo-judge {
+    width: 80px; 
+    height: 80px;
+  }
+
+  .panel-info img {
+    width: 12px; 
+    height: auto;
+  }
+
+  .back-button {
+    padding: 0.4rem 0.6rem;
+    margin-top: 10px; 
+  }
+
+  .back-arrow {
+    width: 16px; 
+    margin-right: 6px; 
+    margin-top: 4px;
+  }
+
+  .panel-info {
+    padding: 0.4rem 1rem; 
+    gap: 0.4rem;
+    font-size: 0.9rem; 
+    justify-content: center; 
+  }
+
+  span {
+    font-size: 1.8rem;
+  }
+
+  .panel-span-title {
+    font-size: 0.95rem; 
+    text-align: center; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button {
+    height: 90px; 
+    padding: 1rem 1.5rem; 
+  }
+
+  .panel-info img {
+    width: 10px;
+    height: auto; 
+  }
+
+  .logo-judge {
+    width: 60px; 
+    height: 60px;
+  }
+
+  .panel-info {
+    padding: 0.3rem 1rem; 
+    font-size: 0.85rem;
+    justify-content: center;
+    gap:0.3rem;
+  }
+
+  span {
+    font-size: 1.6rem; 
+  }
+
+  .panel-span-title {
+    font-size: 0.9rem; 
+    text-align: center; 
+  }
+}
