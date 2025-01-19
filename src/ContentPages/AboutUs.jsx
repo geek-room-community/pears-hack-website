@@ -63,7 +63,7 @@ const AboutUs = () => {
       <div className="title-container">
         <div className={`title-wrapper ${activeContent === 'geek' ? 'geek-title' : 'pear-title'}`}>
           <div className="title-code-brackets">
-            <img src={currentContent.logo} alt="" height="25px"/>
+            <img src={currentContent.logo} alt="" height="30px"/>
           </div>
           <div className="title">
             {currentContent.title.split('').map((letter, index) => (
