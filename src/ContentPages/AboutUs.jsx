@@ -10,7 +10,7 @@ const AboutUs = () => {
 
   const geekRoomContent = {
     title: "GEEK ROOM",
-    description: "Geek Room is a widespread coding community with over 25000+ active coders nationwide. It was started by three coding enthusiasts with the main objective to create a transparent community where sharing of ideas and helping other people is the main goal.",
+    description: "Geek Room is a widespread coding community with over 25000+ active coders nationwide. It was started by three coding enthusiasts with the main objective to create a transparent community where sharing of ideas and helping each other is the purpose.",
     images: [
       "/api/placeholder/200/150",
       "/api/placeholder/200/150",
@@ -65,7 +65,7 @@ const AboutUs = () => {
           <div className="title-code-brackets">
             <img src={currentContent.logo} alt="" height="50px"/>
           </div>
-          <div className="title">
+          <div className="titlee">
             {currentContent.title.split('').map((letter, index) => (
               <span key={index}>{letter}</span>
             ))}
