@@ -1,0 +1,49 @@
+.card {
+  border-radius: 100px;
+  background-color: #272727;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.circle {
+  height: 75px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #818181;
+}
+
+.card-text {
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.team-card-v1 {
+  padding-right: 30px;
+}
+
+.team-card-v2 {
+  padding-left: 30px;
+}
+
+.team-card-arrow {
+  height: 30px;
+  width: 30px;
+}
+
+.team-card-arrow-inverted {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 5px;
+  }
+
+  .circle {
+    height: 50px;
+  }
+
+  .card-text {
+    font-size: large;
+  }
+}

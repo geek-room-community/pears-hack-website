@@ -33,14 +33,14 @@ const Timer = () => {
 
   return (
     <div className="countdown-container">
-      <button className="register-now"
-      onClick={() => window.open('https://dorahacks.io/hackathon/geekroom-pears/detail', '_blank', 'noopener noreferrer')}>
+      <button
+        className="register-now"
+        onClick={() =>
+          window.open("https://lu.ma/9mqll98a", "_blank", "noopener noreferrer")
+        }
+      >
         <span>REGISTER NOW</span>
-        <img
-          src={Arrow}
-          alt="Arrow"
-          className="arrow"
-        />
+        <img src={Arrow} alt="Arrow" className="arrow" />
       </button>
       <div className="timer">
         <span>{String(timeLeft.days).padStart(2, "0")}</span> :
