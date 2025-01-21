@@ -70,14 +70,14 @@ const ScrollContent = ({ totalIndexes, onIndexChange }) => {
   }, [scrollDistance, currentIndex]);
 
   return (
-    <>
-      <div className="top-logo-pagenm">
-        <div className="logos">
-          <img src={PearLogo} alt="PearsLogo" />
-          <img src={Cross} alt="Cross" id="cross" />
-          <img src={GRLogo} alt="GRLogo" />
+    <div className="py-[12vh] flex flex-col justify-between items-center md:items-start md:py-6 md:ml-[calc(10%-10px)] h-screen w-screen">
+      <div className="hidden md:flex flex-row items-center justify-between px-2 py-2 w-3/5 rounded-full bg-[#2a2a2a]">
+        <div className="flex flex-row items-center justify-center gap-2 bg-[#242323] rounded-full px-2">
+          <img src={PearLogo} alt="PearsLogo" className="w-12 h-12" />
+          <img src={Cross} alt="Cross" className="w-8 h-18" />
+          <img src={GRLogo} alt="GRLogo" className="w-16 h-16" />
         </div>
-        <div className="pagenm">
+        <div className="flex text-white text-3xl font-semibold flex-1 items-center justify-center ">
           {[
             "HOME",
             "ABOUT US",
@@ -89,9 +89,9 @@ const ScrollContent = ({ totalIndexes, onIndexChange }) => {
           ][currentIndex]}
         </div>
       </div>
-      <div className="top-logo-pagenm-mobile">
-        <img src={PearLogo} alt="PearsLogo" id="pears-logo-m"/>
-        <div className="pagenm-mobile">
+      <div className="md:hidden flex flex-row items-center justify-between gap-2 px-3 py-2 w-5/6 rounded-full bg-[#2a2a2a]">
+        <img src={PearLogo} alt="PearsLogo" className="w-10 h-10" />
+        <div className="text-white text-xl font-semibold flex flex-1 items-center justify-center">
           {[
             "HOME",
             "ABOUT US",
@@ -102,27 +102,27 @@ const ScrollContent = ({ totalIndexes, onIndexChange }) => {
             "CONTACT US",
           ][currentIndex]}
         </div>
-        <img src={GRLogo} alt="GRLogo" />
+        <img src={GRLogo} alt="GRLogo" className="w-10 h-10" />
       </div>
-      <div style={{ position: "relative", textAlign: "center", color: "#fff" }}>
+      <div className="relative text-white text-center">
         <button
-          className="nav-button nav-button-right"
+          className="md:hidden fixed top-1/2 right-0 transform -translate-y-1/2 bg-black/5 text-white mx-1 px-4 py-2 rounded-full z-20 cursor-pointer text-2xl font-bold hover:bg-white hover:text-black"
           onClick={handlePrevious}
           disabled={currentIndex === 0}
         >
           &#9654;
         </button>
+        {/* <div className="flex flex-col flex-1 justify-center bg-white/50">hello</div> */}
         {pages[currentIndex]} {/* Dynamically render the page component */}
         <button
-          className="nav-button nav-button-left"
+          className="md:hidden fixed top-1/2 left-0 transform -translate-y-1/2 bg-black/5 text-white mx-1 px-4 py-2 rounded-full z-20 cursor-pointer text-2xl font-bold hover:bg-white hover:text-black"
           onClick={handleNext}
           disabled={currentIndex === pages.length - 1}
         >
           &#9664;
-          
         </button>
       </div>
-    </>
+    </div>
   );
 };
 
