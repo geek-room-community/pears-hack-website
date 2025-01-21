@@ -32,17 +32,17 @@ const Timer = () => {
   }, []);
 
   return (
-    <div className="countdown-container">
+    <div className="flex flex-col items-center justify-center w-fit md:w-full bg-[#333] border-2 border-white rounded-[35px] font-black">
       <button
-        className="register-now"
+        className="flex flex-row items-center justify-center -mt-1 gap-3 md:gap-6 mx-3 md:mx-0 w-full z-10 font-bold text-[#aaf400] bg-[linear-gradient(180deg,#000,#333)] px-4 py-4 rounded-full border-4 border-[#aaf400] hover:bg-[linear-gradient(180deg,#333,#000)] hover:scale-105 hover:border-[#aaf400] transition-all duration-300 ease-in-out"
         onClick={() =>
           window.open("https://lu.ma/9mqll98a", "_blank", "noopener noreferrer")
         }
       >
-        <span>REGISTER NOW</span>
-        <img src={Arrow} alt="Arrow" className="arrow" />
+        <span className="text-lg md:text-3xl">REGISTER NOW</span>
+        <img src={Arrow} alt="Arrow" className="w-7 h-7 md:w-10 md:h-10" />
       </button>
-      <div className="timer">
+      <div className="flex flex-row items-center justify-center gap-1 my-4 mx-6 md:mx-10 md:my-7 w-full text-xl md:text-2xl font-bold">
         <span>{String(timeLeft.days).padStart(2, "0")}</span> :
         <span>{String(timeLeft.hours).padStart(2, "0")}</span> :
         <span>{String(timeLeft.minutes).padStart(2, "0")}</span> :
