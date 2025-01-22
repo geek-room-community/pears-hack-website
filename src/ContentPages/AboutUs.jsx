@@ -67,7 +67,8 @@ Find out more at pears.com and Explore our Famous Product Keet.io a P2P safe cha
       rounded-[6px]
       
        bg-[#b0d944] 
-       text-white 
+       text-gray-700
+       font-bold 
        transition 
        duration-200 
       "
