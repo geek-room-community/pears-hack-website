@@ -1,24 +1,24 @@
 // AboutUs.jsx
 import React, { useState } from 'react';
 import './about.css';
-import PearLogo from "../SVGs/pears-logo.svg";
-import GRLogo from "../SVGs/GRLogo.svg";
+import PearLogo from "../SVGs/PearsLogo1.png";
+// import GRLogo from "../SVGs/GRLogo.svg";
 
 
 const AboutUs = () => {
-  const [activeContent, setActiveContent] = useState('pear'); // 'pear' or 'geek'
+  // const [activeContent, setActiveContent] = useState('pear'); // 'pear' or 'geek'
 
-  const geekRoomContent = {
-    title: "GEEK ROOM",
-    description: "Geek Room is a widespread coding community with over 25000+ active coders nationwide. It was started by three coding enthusiasts with the main objective to create a transparent community where sharing of ideas and helping each other is the purpose.",
-    images: [
-      "/api/placeholder/200/150",
-      "/api/placeholder/200/150",
-      "/api/placeholder/200/150",
-      "/api/placeholder/200/150",
-    ],
-    logo:GRLogo,
-  };
+  // const geekRoomContent = {
+  //   title: "GEEK ROOM",
+  //   description: "Geek Room is a widespread coding community with over 25000+ active coders nationwide. It was started by three coding enthusiasts with the main objective to create a transparent community where sharing of ideas and helping each other is the purpose.",
+  //   images: [
+  //     "/api/placeholder/200/150",
+  //     "/api/placeholder/200/150",
+  //     "/api/placeholder/200/150",
+  //     "/api/placeholder/200/150",
+  //   ],
+  //   logo:GRLogo,
+  // };
 
   const pearContent = {
     title: "PEARS",
@@ -32,44 +32,19 @@ const AboutUs = () => {
     logo:PearLogo,
   };
 
-  const currentContent = activeContent === 'pear' ? pearContent : geekRoomContent;
-
   return (
     <div className="about-container">
       {/* Header with logos */}
        {/* Toggle Switch */}
-       <div className="toggle-container">
-        {/* Geek Room Button */}
-        <button
-          onClick={() => setActiveContent("geek")}
-          className={`toggle-button ${
-            activeContent === "geek" ? "active" : ""
-          }`}
-        >
-          <img src={GRLogo} alt="Geek Room Logo" />
-        </button>
-        {/* Pears Button */}
-        <button
-          onClick={() => setActiveContent("pear")}
-          className={`toggle-button ${
-            activeContent === "pear" ? "active pear" : ""
-          }`}
-        >
-          <img src={PearLogo} alt="Pear Logo" />
-        </button>
-      </div>
+      
 
       {/* Title toggle */}
       <div className="title-container">
-        <div className={`title-wrapper ${activeContent === 'geek' ? 'geek-title' : 'pear-title'}`}>
+        <div className={`title-wrapper `}>
           <div className="title-code-brackets">
-            <img src={currentContent.logo} alt="" height="50px"/>
+            <img src={pearContent.logo} alt="" height="40px"/>
           </div>
-          <div className="titlee">
-            {currentContent.title.split('').map((letter, index) => (
-              <span key={index}>{letter}</span>
-            ))}
-          </div>
+          
         </div>
       </div>
 
@@ -78,9 +53,27 @@ const AboutUs = () => {
       {/* Content */}
       <div className="content-section">
         <p className="description">
-          {currentContent.description}
+        Pear Runtime is an open-source, peer-to-peer (P2P) development platform revolutionizing how apps are built, deployed, and distributed. By eliminating the need for servers, it empowers developers to create secure, scalable, and cost-efficient applications while maintaining full control of their data.
+With a commitment to privacy, resilience, and decentralization, Pear Runtime is shaping the future of the internet—one where creators and users are in control.
+</p>  <p className="description">
+Find out more at pears.com and Explore our Famous Product Keet.io a P2P safe chat system
         </p>
-
+<a href="/keet.io"
+              className="py-3 
+            px-10
+            md:px-16
+      md:text-xl
+      hover:bg-[#121212] 
+      rounded-[6px]
+      border-2 
+      border-black 
+      dark:border-black 
+       bg-[#b0d944] 
+       text-white 
+       transition 
+       duration-200 
+      "
+          >Explore</a>
         {/* Image grid */}
         {/* <div className={`image-grid ${activeContent === 'pear' ? 'pear-grid' : 'geek-grid'}`}>
           {currentContent.images.map((img, index) => (
