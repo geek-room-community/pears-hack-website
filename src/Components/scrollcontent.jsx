@@ -6,7 +6,7 @@ import AboutUs from "../ContentPages/AboutUs";
 import Team from "../ContentPages/Team";
 import Highlights from "../ContentPages/Highlights";
 import JudgingPanel from "../ContentPages/JudgingPanel";
-import Prize from "../ContentPages/Prize";
+import Prize from "../ContentPages/Prize.tsx";
 import PearLogo from "../SVGs/pears-logo.svg";
 import GRLogo from "../SVGs/GRLogo.svg";
 import Cross from "../SVGs/Cross.svg";
