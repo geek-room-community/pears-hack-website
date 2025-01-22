@@ -7,7 +7,7 @@
   position: relative;
   padding-right: 2rem;
   overflow-x: hidden;
-  width: 980px;
+  width: 850px;
   margin-top: 40px;
   box-sizing: border-box;
   overflow: hidden;
@@ -19,6 +19,7 @@
   flex-direction: column;
   gap: 1.1rem;
   align-items: center; 
+  margin-right: 12rem;
 }
 
 /* Individual buttons */
@@ -33,7 +34,7 @@
   transition: all 0.3s ease;
   border: 2px solid;
   gap: 2rem;
-  width: 400px; 
+  width: 400px;
 }
 
 /* Button sizes */
