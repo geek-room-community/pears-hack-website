@@ -51,17 +51,17 @@ const AboutUs = () => {
 
 
       {/* Content */}
-      <div className="content-section">
+      <div className="content-section mb-2">
         <p className="description">
         Pear Runtime is an open-source, peer-to-peer (P2P) development platform revolutionizing how apps are built, deployed, and distributed. By eliminating the need for servers, it empowers developers to create secure, scalable, and cost-efficient applications while maintaining full control of their data.
 With a commitment to privacy, resilience, and decentralization, Pear Runtime is shaping the future of the internet—one where creators and users are in control.
 </p>  <p className="description">
 Find out more at pears.com and Explore our Famous Product Keet.io a P2P safe chat system
         </p>
-<a href="/keet.io"
+<a href="https://keet.io/"
               className="py-3 
             px-10
-            md:px-16
+            md:px-8
       md:text-xl
       hover:bg-[#121212] 
       rounded-[6px]
