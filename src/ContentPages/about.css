@@ -20,9 +20,9 @@
 }
 .about-container {
 position: relative;
-max-width: 800px;
+max-width: 900px;
 background: #2A2A2A;
-box-shadow: 0px 0px 22.3px -5px #000000;
+
 padding:24px;
 border-radius: 38px;
 color: white;
@@ -198,7 +198,7 @@ color: #4ade80; /* ABOUT US in green */
 @media (max-width: 480px) {
 .about-container {
   width: 100%;
-  margin: 2rem auto;
+  margin: 2rem 0.5rem;
   padding: 1.25rem;
   border-radius: 20px;
 }
@@ -307,7 +307,7 @@ display:flex;
   .about-container {
     width: 75%;
     padding: 12px;
-    margin: 16px auto;
+    margin: 12px auto;
   }
 
   .logos {
