@@ -138,9 +138,14 @@ text-align: center;
   color: #d1d1d1;
 font-size: 18px;
 line-height: 1.6;
-margin-bottom: 24px;
+margin-bottom: 12px;
 }
-
+.descriptionn {
+  color: #d1d1d1;
+font-size: 18px;
+line-height: 1.6;
+margin-bottom: 14px;
+}
 .image-grid {
 display: grid;
 gap: 16px;
@@ -301,6 +306,9 @@ display:flex;
   .description {
     font-size: 16px;
   }
+  .descriptionn {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -336,6 +344,9 @@ display:flex;
   }
 
   .description {
+    font-size: 14px;
+  }
+  .descriptionn {
     font-size: 14px;
   }
 } 

@@ -42,7 +42,7 @@ const AboutUs = () => {
       <div className="title-container">
         <div className={`title-wrapper `}>
           <div className="title-code-brackets">
-            <img src={pearContent.logo} alt="" height="40px"/>
+            <img src={pearContent.logo} alt="" height="30px"/>
           </div>
           
         </div>
@@ -53,10 +53,10 @@ const AboutUs = () => {
       {/* Content */}
       <div className="content-section mb-2">
         <p className="description">
-        Pear Runtime is an open-source, peer-to-peer (P2P) development platform revolutionizing how apps are built, deployed, and distributed. By eliminating the need for servers, it empowers developers to create secure, scalable, and cost-efficient applications while maintaining full control of their data.
-With a commitment to privacy, resilience, and decentralization, Pear Runtime is shaping the future of the internet—one where creators and users are in control.
-</p>  <p className="description">
-Find out more at pears.com and Explore our Famous Product Keet.io a P2P safe chat system
+        Pear Runtime is an open-source, peer-to-peer (P2P) development platform revolutionizing how apps are built, deployed, and distributed. By eliminating the need for servers, it empowers to create secure and cost-efficient applications while maintaining full control of their data.
+ Pear Runtime is shaping the future of the internet—one where creators and users are in control.
+</p>  <p className="descriptionn">
+Find out more at pears.com and Explore our Famous Product P2P safe chat-system
         </p>
 <a href="https://keet.io/"
               className="py-3 
@@ -72,7 +72,7 @@ Find out more at pears.com and Explore our Famous Product Keet.io a P2P safe cha
        transition 
        duration-200 
       "
-          >Explore</a>
+          >Keet.io</a>
         {/* Image grid */}
         {/* <div className={`image-grid ${activeContent === 'pear' ? 'pear-grid' : 'geek-grid'}`}>
           {currentContent.images.map((img, index) => (
