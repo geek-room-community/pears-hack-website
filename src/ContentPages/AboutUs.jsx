@@ -60,8 +60,8 @@ Find out more at pears.com and Explore our Famous Product Keet.io a P2P safe cha
         </p>
 <a href="https://keet.io/"
               className="py-3 
-            px-8
-            md:px-4
+            px-4
+            md:px-8
       md:text-xl
       hover:bg-[#121212] 
       rounded-[6px]
