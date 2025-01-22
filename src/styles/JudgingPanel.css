@@ -1,59 +1,6 @@
 /* General adjustments */
-.main-panel {
-  color: #fff;
-  height: auto; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem; 
-}
-
-.buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-}
-
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: #222;
-  border-radius: 4.8rem;
-  padding: 1.5rem 2.0rem; 
-  width: 100%; 
-  height: 80px;
-  gap: 25px;
-}
-
-.logo-judge {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #818181;
-  margin-right: 3rem;
-  width: 90px; 
-  height: 90px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
 .panel-info {
-  background-color: transparent;
-  border: none;
-  padding: 0.5rem 1.5rem; 
   border: 2px solid #B6DD48;
-  border-radius: 4.8rem;
-  color: #B6DD48;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1rem; 
-  text-align: center; 
 }
 
 span {
@@ -82,13 +29,7 @@ span {
   align-items: center;
   justify-content: flex-start;
   padding: 0.2rem 0.7rem;
-  margin-top: 1rem;
-}
-
-.back-arrow {
-  width: 18px; 
-  height: 2rem;
-  margin-right: 8px; 
+  margin-top: 5rem;
 }
 
 .judge-title-panel-info {
@@ -159,7 +100,7 @@ span {
 
 @media screen and (max-width: 480px) {
   .button {
-    height: 90px; 
+    height: 120px; 
     padding: 1rem 1.5rem; 
   }
 

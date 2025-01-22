@@ -17,7 +17,7 @@ const JudgingPanel = () => {
             className="back-button"
             onClick={() => setActivePanel("judgingPanel")}
           >
-            <img src={Frame} alt="Back-Arrow" className="back-arrow" />
+            <img src={Frame} alt="Back-Arrow" className="back-arrow w-[18px] h-8 mr-2" />
           </button>
           <Judges />
         </div>
@@ -31,7 +31,7 @@ const JudgingPanel = () => {
             className="back-button"
             onClick={() => setActivePanel("judgingPanel")}
           >
-            <img src={Frame} alt="Back-Arrow" className="back-arrow" />
+            <img src={Frame} alt="Back-Arrow" className="back-arrow w-[18px] h-8 mr-2" />
           </button>
           <Mentors />
         </div>
@@ -40,24 +40,24 @@ const JudgingPanel = () => {
 
     // Default view for Judging Panel
     return (
-      <div className="main-panel">
-        <div className="buttons">
-          <div className="button" onClick={() => setActivePanel("judges")}>
-            <span className="logo-judge"></span>
+      <div className="main-panel text-white h-auto flex flex-col items-center justify-center mt-10 p-8">
+        <div className="buttons flex flex-col items-center gap-12">
+          <div className="button flex items-center justify-start bg-[#222] rounded-[4.8rem] px-8 py-6 w-full h-32 gap-[25px]" onClick={() => setActivePanel("judges")}>
+            <span className="logo-judge flex justify-center items-center bg-[#818181] mr-12 w-[90px] h-[90px] rounded-full flex-shrink-0"></span>
             <div className="judge-title-panel-info">
               <span>JUDGES</span>
-              <div className="panel-info">
+              <div className="panel-info bg-transparent border-none px-6 py-2 rounded-[4.8rem] text-[#B6DD48] cursor-pointer flex justify-center items-center gap-2 text-base text-center">
                 <span className="panel-span-title">Panel Info</span>
                 <img src={Vector} alt="forward-Arrow" size={11} />
               </div>
             </div>
           </div>
 
-          <div className="button" onClick={() => setActivePanel("mentors")}>
-            <div className="logo-judge"></div>
+          <div className="button flex items-center justify-start bg-[#222] rounded-[4.8rem] px-8 py-6 w-full h-32 gap-[25px]" onClick={() => setActivePanel("mentors")}>
+            <div className="logo-judge flex justify-center items-center bg-[#818181] mr-12 w-[90px] h-[90px] rounded-full flex-shrink-0"></div>
             <div className="judge-title-panel-info">
               <span>MENTORS</span>
-              <div className="panel-info">
+              <div className="panel-info bg-transparent border-none px-6 py-2 rounded-[4.8rem] text-[#B6DD48] cursor-pointer flex justify-center items-center gap-2 text-base text-center">
                 <span className="panel-span-title">Panel Info</span>
                 <img src={Vector} alt="forward-Arrow" size={11} />
               </div>
