@@ -1,14 +1,15 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from "react";
 // import "../styles/home.css"
 import PearLogo from "../SVGs/pears-logo.svg";
-import Timer from '../Components/Timer';
+import PearLogo1 from "../SVGs/PearsLogo1.png";
+
+import Timer from "../Components/Timer";
 // import Email from "../SVGs/email.svg";
 // import Web from "../SVGs/website.svg";
 // import Instagram from "../SVGs/instagram.svg";
 // import LinkedIn from "../SVGs/linkedin.svg";
 
 const Home = () => {
-
   const titleRef = useRef(null);
   const [titleHeight, setTitleHeight] = useState(0);
   const font = "Bebas Neue";
@@ -21,22 +22,24 @@ const Home = () => {
   return (
     <div className="md:mt-[10vh] flex flex-col items-center justify-center gap-5">
       <div className="lineptitle flex flex-row justify-start items-center md:gap-9 ml-[1vw] gap-5">
-        <div className="leftline bg-white h-[180px] md:h-[290px] w-2 rounded-full"
+        <div className="leftline bg-white h-[180px] md:h-[290px] w-2 rounded-full"></div>
+        <div
+          className="title flex flex-col items-start justify-center text-[55px] leading-[1.2em] tracking-[4px] md:text-[85px] md:leading-[1.3em] md:tracking-[7px]"
+          style={{ fontFamily: font }}
         >
-        </div>
-        <div className="title flex flex-col items-start justify-center text-[55px] leading-[1.2em] tracking-[4px] md:text-[85px] md:leading-[1.3em] md:tracking-[7px]" style={{ fontFamily: font }}>
           <div className="topimg flex flex-row items-center justify-center gap-4">
-            <img src={PearLogo} alt="" className='h-12 md:h-20' />
-            <div>PEARS</div>
+            <img src={PearLogo1} alt="" className="h-12 mb-4 md:h-20" />
+            {/* <div>PEARS</div> */}
           </div>
-          <div id='gleen' className='text-[#b6dd48]'>GLOBAL</div>
+          <div id="gleen" className="text-[#b6dd48]">
+            GLOBAL
+          </div>
           <div>HACKATHON</div>
         </div>
       </div>
       <div className="timer-container">
         <Timer />
       </div>
-
 
       {/* <div className="registerbttn">
         <button className="registerbtn">REGISTER NOW</button>
