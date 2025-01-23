@@ -17,9 +17,9 @@
 .buttonss {
   display: flex;
   flex-direction: column;
-  gap: 1.1rem;
+  gap: 1.4rem;
   align-items: center; 
-  margin-right: 12rem;
+  margin-right: 7rem;
 }
 
 /* Individual buttons */
@@ -29,7 +29,7 @@
   justify-content: flex-start; 
   background-color: #222;
   border-radius: 4.8rem;
-  padding: 10px 15px;
+  padding: 13px 15px;
   text-align: center;
   transition: all 0.3s ease;
   border: 2px solid;
@@ -40,18 +40,18 @@
 /* Button sizes */
 .buttonsss:nth-child(1),
 .buttonsss:nth-child(5) {
-  height: 78px;
+  height: 81px;
   margin-left:36rem;
 }
 
 .buttonsss:nth-child(2),
 .buttonsss:nth-child(4) {
-  height: 80px;
+  height: 82px;
   margin-left: 20rem;
 }
 
 .buttonsss:nth-child(3) {
-  height: 82px;
+  height: 83px;
   margin-left: 8rem;
 }
 
@@ -70,11 +70,14 @@
 
 /* Panel info container */
 .judge-title-panel-infos {
+  padding:1.7rem ;
+  padding-top: 1.9rem;
+  padding-bottom: 1.9rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 2px;
+  gap: 3px;
   width: 100%;
 }
 
@@ -123,40 +126,45 @@
     height: auto; 
     width: 100%;
     justify-content: center; 
-    margin-bottom: 4.1rem;
+    margin-bottom: 5.1rem;
     margin-top: 0.1px;
+    margin-left: 3rem;
   }
 
   /* Buttons container */
   .buttonss {
     align-items: center;
-    gap: 10px; 
+    gap: 15px; 
   }
 
   /* Individual buttons */
   .buttonsss {
     border-radius: 2.4rem; 
+    display: flex;
     justify-content: center;
-    width: 200px; 
+    align-items: center;
+    width: 245px;
+    padding: 0.2rem;
+    margin: 0;
   }
 
   /* Button heights for mobile */
   .buttonsss:nth-child(1),
   .buttonsss:nth-child(5) {
-    height: 39px; 
+    height: 59px; 
     padding: 0.8rem 1.4rem;
     margin-left: 6rem;
   }
 
   .buttonsss:nth-child(2),
   .buttonsss:nth-child(4) {
-    height: 39px;
+    height: 61px;
     margin-left:2rem;
     padding: 0.8rem 1.4rem;
   }
 
   .buttonsss:nth-child(3) {
-    height: 39px;
+    height: 63px;
     margin-left: 0.05rem;
     padding: 0.8rem 1.4rem;
   }
@@ -165,19 +173,18 @@
   .logo-judges {
     width: 60px; 
     height: 60px;
-    margin-left: 0; 
+    margin: 0 auto; 
   }
 
   /* Panel info container */
   .judge-title-panel-infos {
     align-items: center; 
     text-align: center;
-    gap: 4px;
   }
 
   /* Judge title text */
   .titles {
-    font-size: 20px; 
+    font-size: 17px; 
   }
 
   /* Green subtitle text */
@@ -187,13 +194,13 @@
 
   /* Social media icons */
   .social-icons {
-    margin-top: 6px;
+    margin-top: 0.2px;
     justify-content: center; 
-    gap: 8px; 
+    gap: 4px; 
   }
 
   .icon {
-    font-size: 14px; 
+    font-size: 12px; 
   }
 }
 
