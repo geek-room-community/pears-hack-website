@@ -26,7 +26,7 @@ const Contact = () => {
           </span>
         </a>
         <a 
-          href="https://keet.io/"
+          href="https://keetlink.vercel.app/"
           className="flex items-center gap-3 text-white hover:text-[#B6DD48] md:py-1 break-words">
           <img 
             className="w-5 md:w-6 aspect-square flex-shrink-0"
