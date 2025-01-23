@@ -72,7 +72,7 @@ Find out more at pears.com
        transition 
        duration-200 
       "
-          >Keet.io</a>
+          >PEARS</a>
         {/* Image grid */}
         {/* <div className={`image-grid ${activeContent === 'pear' ? 'pear-grid' : 'geek-grid'}`}>
           {currentContent.images.map((img, index) => (
