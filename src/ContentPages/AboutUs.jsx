@@ -66,13 +66,13 @@ Find out more at pears.com
       hover:bg-[#121212] 
       rounded-[6px]
       
-       bg-[#b0d944] 
+       bg-white
        text-gray-700
        font-bold 
        transition 
        duration-200 
       "
-          >PEARS</a>
+          >Learn More</a>
         {/* Image grid */}
         {/* <div className={`image-grid ${activeContent === 'pear' ? 'pear-grid' : 'geek-grid'}`}>
           {currentContent.images.map((img, index) => (
