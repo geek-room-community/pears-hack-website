@@ -13,31 +13,17 @@ const Contact = () => {
         <span className="text-[#B6DD48] text-3xl md:text-4xl">GOT</span> A QUERY?
       </h2>
       <p className="font-['VT323'] text-lg md:text-2xl text-left">
-        We're here to assist you! Reach out to us through:
+      We're here to assist you! Join us on Keet:
       </p>
-      <div className="flex flex-col md:gap-3">
-        <a href="mailto:community@geekroom.in"
-          className="flex items-center gap-3 text-white hover:text-[#B6DD48] md:py-1 break-words">
-          <img className="w-5 md:w-6 aspect-square flex-shrink-0"
-            src={Email}
-            alt="email icon" />
-          <span className="font-['VT323'] text-lg md:text-xl">
-            community@geekroom.in
-          </span>
-        </a>
-        <a 
-          href="https://keetlink.vercel.app/"
-          className="flex items-center gap-3 text-white hover:text-[#B6DD48] md:py-1 break-words">
-          <img 
-            className="w-5 md:w-6 aspect-square flex-shrink-0"
-            src= {Pearss}
-            alt="keet room icon" 
-          />
-          <span className="font-['VT323'] text-lg md:text-xl">
-           keet.io
-          </span>
-        </a>
-      </div>
+      <div className="  ">
+      <a
+        href="https://keetlink.vercel.app/"
+        className="flex items-center justify-center"
+        style={{ fontFamily: "'VT323', monospace" }}
+      >
+        <span className="text-lg md:text-xl border border-[#B6DD48] hover:bg-[#B6DD48] hover:text-black  p-2  border rounded-md  flex items-center justify-center">Join us on keet</span>
+      </a>
+    </div>
       <p className="font-['VT323'] text-lg md:text-2xl text-left">
         Also follow us on our social media handles
       </p>
@@ -53,7 +39,17 @@ const Contact = () => {
             www.geekroom.in
           </span>
         </a>
-        <a href="https://www.instagram.com/geek_suite/"
+        <a href="mailto:community@geekroom.in"
+          className="flex items-center gap-3 text-white hover:text-[#B6DD48] md:py-1 break-words">
+          <img className="w-5 md:w-6 aspect-square flex-shrink-0"
+            src={Email}
+            alt="email icon" />
+          <span className="font-['VT323'] text-lg md:text-xl">
+            community@geekroom.in
+          </span>
+        </a>
+
+        {/* <a href="https://www.instagram.com/geek_suite/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-3 text-white hover:text-[#B6DD48] break-words">
@@ -63,7 +59,7 @@ const Contact = () => {
           <span className="font-['VT323'] text-lg">
             geek_suite
           </span>
-        </a>
+        </a> */}
         <a href="https://www.linkedin.com/company/geek-suite/"
           target="_blank"
           rel="noopener noreferrer"
