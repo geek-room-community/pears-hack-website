@@ -8,6 +8,7 @@ import logo4 from "../SVGs/Clip Appearance.svg";
 import logo5 from "../SVGs/Management.svg";
 import logo6 from "../SVGs/User Groups.svg";
 import logo7 from "../SVGs/Phone Message.svg";
+// import logo8 from "../SVGs/Timeline.png";
 
 const PieChart = ({ activeIndex }) => {
   const radius = 290;
