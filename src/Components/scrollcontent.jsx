@@ -7,6 +7,7 @@ import Team from "../ContentPages/Team";
 import Highlights from "../ContentPages/Highlights";
 import JudgingPanel from "../ContentPages/JudgingPanel";
 import Prize from "../ContentPages/Prize.tsx";
+import Timeline from "../ContentPages/Timeline.jsx";
 import PearLogo from "../SVGs/pears-logo.svg";
 import GRLogo from "../SVGs/GRLogo.svg";
 import Cross from "../SVGs/Cross.svg";
@@ -28,6 +29,7 @@ const ScrollContent = ({ totalIndexes, onIndexChange }) => {
     <Contact />,
     <Tracks />,
     <FAQ />,
+    <Timeline />,
   ];
 
   const handleScroll = (e) => {
@@ -35,7 +37,7 @@ const ScrollContent = ({ totalIndexes, onIndexChange }) => {
     const newScrollDistance = scrollDistance + delta;
 
     if (newScrollDistance >= threshold) {
-      if (currentIndex < totalIndexes - 1 && currentIndex < 8) {
+      if (currentIndex < totalIndexes - 1 && currentIndex < 9) {
         setCurrentIndex(currentIndex + 1);
         onIndexChange(currentIndex + 1); // Notify parent
       }
@@ -52,7 +54,7 @@ const ScrollContent = ({ totalIndexes, onIndexChange }) => {
   };
 
   const handleNext = () => {
-    if (currentIndex < totalIndexes - 1 && currentIndex < 8) {
+    if (currentIndex < totalIndexes - 1 && currentIndex < 9) {
       setCurrentIndex(currentIndex + 1);
       onIndexChange(currentIndex + 1); // Notify parent
     }
@@ -92,6 +94,7 @@ const ScrollContent = ({ totalIndexes, onIndexChange }) => {
             "CONTACT US",
             "TRACKS",
             "FAQS",
+            "TIMELINE",
           ][currentIndex]}
         </div>
       </div>
@@ -108,6 +111,7 @@ const ScrollContent = ({ totalIndexes, onIndexChange }) => {
             "CONTACT US",
             "TRACKS",
             "FAQS",
+            "TIMELINE",
           ][currentIndex]}
         </div>
         <img src={GRLogo} alt="GRLogo" className="w-10 h-10" />
