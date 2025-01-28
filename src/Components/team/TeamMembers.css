@@ -9,3 +9,56 @@
     margin-left: 0;
   }
 }
+
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-33.33% - 1rem)); /* Move by one set of cards */
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(calc(-33.33% - 1rem)); /* Move by one set of cards */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.scroll-left {
+  animation: scroll-left 20s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.scroll-right {
+  animation: scroll-right 20s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+.scroll-left:hover,
+.scroll-right:hover {
+  animation-play-state: paused;
+}
+
+.carousel-container {
+  width: 200%;
+  display: flex;
+}
+
+@media (max-width: 640px) {
+  .scroll-left,
+  .scroll-right {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
