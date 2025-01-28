@@ -1,20 +1,20 @@
-"use client"
+"use client";
 
-import "../../styles/JudgesMentors.css"
-import "./TeamMembers.css"
-import React from "react"
-import { Linkedin, Github } from "lucide-react"
-import { Link } from "react-router-dom"
-import Frame from "../../SVGs/Frame.svg"
+import "../../styles/JudgesMentors.css";
+import "./TeamMembers.css";
+import React from "react";
+import { Linkedin, Github } from "lucide-react";
+import { Link } from "react-router-dom";
+import Frame from "../../SVGs/Frame.svg";
 
-import Naman from "../../assets/team/website/Naman.jpg"
-import Nevin from "../../assets/team/website/Nevin.jpg"
-import Darsh from "../../assets/team/website/Darsh.jpg"
-import Manas from "../../assets/team/website/Manas.jpg"
-import Arsh from "../../assets/team/website/Arsh.jpeg"
-import Chaitanya from "../../assets/team/website/Chaitanya.webp"
-import Nibedan from "../../assets/team/website/Nibedan.jpeg"
-import Chirag from "../../assets/team/website/Chirag.jpg"
+import Naman from "../../assets/team/website/Naman.jpg";
+import Nevin from "../../assets/team/website/Nevin.jpg";
+import Darsh from "../../assets/team/website/Darsh.jpg";
+import Manas from "../../assets/team/website/Manas.jpg";
+import Arsh from "../../assets/team/website/Arsh.jpeg";
+import Chaitanya from "../../assets/team/website/Chaitanya.webp";
+import Nibedan from "../../assets/team/website/Nibedan.jpeg";
+import Chirag from "../../assets/team/website/Chirag.jpg";
 
 const webdev = [
   {
@@ -27,7 +27,7 @@ const webdev = [
     name: "Nevin Bali",
     image: Nevin,
     linkedin: "https://www.linkedin.com/in/nevinbali1012",
-    github: "https://github.com/mentor2",
+    github: "https://github.com/Nevin100",
   },
   {
     name: "Darsh Jain",
@@ -62,18 +62,24 @@ const webdev = [
   {
     name: "Chirag Bhal",
     image: Chirag,
-    linkedin: "https://in.linkedin.com/in/chirag-bhal-0a5854280",
+    linkedin: "https://www.linkedin.com/in/chirag-bhal-0a5854280",
     github: "http://github.com/chirahbhal312",
   },
-]
+];
 
 const DevCard = ({ mentor }) => (
   <div className="group relative w-[14rem] h-[18rem] flex-shrink-0">
     <div className="absolute inset-0 bg-gray-900 rounded-lg overflow-hidden border-2 border-[#b6e33e] transition-transform duration-300 group-hover:scale-105">
-      <img src={mentor.image || "/placeholder.svg"} alt={mentor.name} className="h-full w-full object-cover" />
+      <img
+        src={mentor.image || "/placeholder.svg"}
+        alt={mentor.name}
+        className="h-full w-full object-cover"
+      />
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
         <div className="absolute bottom-0 left-0 right-0 p-2">
-          <h3 className="text-white text-xs font-bold mb-1 truncate">{mentor.name}</h3>
+          <h3 className="text-white text-xs font-bold mb-1 truncate">
+            {mentor.name}
+          </h3>
           <div className="flex gap-2">
             <a href={mentor.linkedin} target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-4 h-4 text-[#b6e33e] hover:text-white transition-colors cursor-pointer" />
@@ -86,21 +92,25 @@ const DevCard = ({ mentor }) => (
       </div>
     </div>
   </div>
-)
+);
 
 const Carousel = ({ mentors, direction = "left" }) => {
-  const repeatedMentors = [...mentors, ...mentors, ...mentors, ...mentors]
+  const repeatedMentors = [...mentors, ...mentors, ...mentors, ...mentors];
 
   return (
-    <div className="flex flex-nowrap relative w-full h-[19rem] py-2 overflow-hidden">
-      <div className={`flex flex-nowrap gap-4 ${direction === "left" ? "scroll-left" : "scroll-right"}`}>
+    <div className="flex flex-nowrap relative w-full h-[19rem] py-2 overflow-hidden ">
+      <div
+        className={`flex flex-nowrap gap-4 ${
+          direction === "left" ? "scroll-left" : "scroll-right"
+        }`}
+      >
         {repeatedMentors.map((mentor, index) => (
           <DevCard key={`${mentor.name}-${index}`} mentor={mentor} />
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
 const Web = () => {
   // const halfIndex = Math.ceil(webdev.length / 2)
@@ -108,10 +118,14 @@ const Web = () => {
   // const bottomMentors = webdev.slice(halfIndex)
 
   return (
-    <section className="relative h-[95vh] -mt-20 md:mt-5 w-[50rem] py-[1rem] overflow-hidden">
+    <section className="relative h-[95vh] -mt-20 md:mt-5 w-[50rem] py-[1rem] ">
       <Link to="/">
         <button className="back-button">
-          <img src={Frame || "/placeholder.svg"} alt="Back-Arrow" className="back-arrow w-[1.5rem] h-8 mr-2" />
+          <img
+            src={Frame}
+            alt="Back-Arrow"
+            className="back-arrow w-[1.5rem] h-8 mr-2"
+          />
         </button>
       </Link>
       <div className="max-w-7xl mt-5 mx-auto px-4 h-full flex flex-col justify-center">
@@ -121,8 +135,7 @@ const Web = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Web
-
+export default Web;

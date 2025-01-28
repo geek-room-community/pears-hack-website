@@ -4,9 +4,32 @@
   margin-left: 18vw;
 }
 
-@media screen and (max-width: 768px) {
+.back-button {
+  position: absolute;
+  top: 5.8rem; 
+  left: 1rem; 
+  z-index: 50; 
+}
+
+.back-arrow{
+  width:2rem;
+  height: auto;
+}
+
+@media screen and (max-width: 718px) {
   .team-members {
     margin-left: 0;
+    margin-bottom: 2rem;
+  }
+
+  .back-button {
+    top:auto;
+    bottom: 8rem; /* Place it near the bottom for mobile */
+    left: 9rem; /* Align to the left */
+  }
+
+  .back-arrow {
+    width: 3rem; /* Increase width for mobile visibility */
   }
 }
 
