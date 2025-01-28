@@ -24,12 +24,12 @@
 
   .back-button {
     top:auto;
-    bottom: 8rem; /* Place it near the bottom for mobile */
-    left: 9rem; /* Align to the left */
+    bottom: 8rem; 
+    left: 9rem; 
   }
 
   .back-arrow {
-    width: 3rem; /* Increase width for mobile visibility */
+    width: 3rem; 
   }
 }
 
@@ -39,13 +39,13 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-33.33% - 1rem)); /* Move by one set of cards */
+    transform: translateX(calc(-33.33% - 1rem)); 
   }
 }
 
 @keyframes scroll-right {
   0% {
-    transform: translateX(calc(-33.33% - 1rem)); /* Move by one set of cards */
+    transform: translateX(calc(-33.33% - 1rem)); 
   }
   100% {
     transform: translateX(0);
