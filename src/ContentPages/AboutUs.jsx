@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 // AboutUs.jsx
-import React, { useState } from "react";
+import React from "react";
 import "./about.css";
 import PearLogo from "../SVGs/PearsLogo1.png";
 // import GRLogo from "../SVGs/GRLogo.svg";
