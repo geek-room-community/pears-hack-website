@@ -51,7 +51,7 @@ const FAQ = () => {
     >
       <div className="max-w-3xl mx-auto space-y-4 md:space-y-6">
         {/* Search Bar */}
-        <div className="relative">
+        {/* <div className="relative">
           <div className="absolute inset-y-0 left-3 md:left-4 flex items-center">
             <img src={Search} alt="Search" className="w-4 h-4 md:w-5 md:h-5" />
           </div>
@@ -62,7 +62,7 @@ const FAQ = () => {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
-        </div>
+        </div> */}
 
         {/* Info Boxes */}
         <div className="grid grid-cols-2 gap-3 md:gap-4">
