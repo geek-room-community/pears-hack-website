@@ -1,61 +1,104 @@
-
-.logo-square {
-  position: absolute;
-  width: 50px; /* Adjust square size as needed */
-  height: 50px;
-  background-color: #171717; /* Default color for desktop */
-  border-radius: 4px;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  rotate: 300deg;
+  /* background-color: #020202; */
 }
 
-.container{
-  box-shadow: 0 0 15px 5px rgba(0, 255, 0, 0.7);
-}
-
-.outer-circle{
-  position: 'absolute';
-  top: '50%';
-  left: '50%';
-  transform: 'translate(-50%, -50%)';
+.outer-circle {
+  position: relative;
   border-radius: 50%;
   background-color: #020202;
-  box-shadow: 0 0 15px 5px rgba(0, 255, 0, 0.7);
+  box-shadow: 0 0 15px 5px rgb(176, 217, 68);
+  rotate: -115deg;
+  max-width: 90vh;
+  max-height: 90vh;
+  aspect-ratio: 1;
 }
 
-.center-image{
-  position: 'absolute';
+.inner-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  background-color: #171717;
+  transition: transform 0.25s ease-in-out;
+}
+
+.center-image {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow: 'hidden';
+  overflow: hidden;
+  border-radius: 50%;
 }
 
-/* For mobile devices, set inner circle color same as outer circle */
-@media only screen and (max-width: 768px) {
+.logo-wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: box-shadow 0.3s ease-in-out;
+}
 
-  
-  .inner-circle{
-    box-shadow: 0 0 15px 5px rgba(0, 255, 0, 0.7);
+.logo-wrapper img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-wrapper:hover img {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.logo-wrapper.active {
+  animation: glow 1s infinite;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    min-height: 90vh;
+  }
+
+  .outer-circle {
+    width: 90vmin !important;
+    height: 90vmin !important;
+    box-shadow: 0 0 10px 3px rgb(176, 217, 68);
+  }
+
+  .inner-circle {
+    width: 90vmin !important;
+    height: 90vmin !important;
     background-color: #020202;
   }
-    .outer-circle {
-      box-shadow: 0 0 15px 5px rgba(0, 255, 0, 0.7);
-      /* Same as the outer circle color */
-    }
 
-    .center-image{
-      z-index: 1;
-    }
-
-    .logo-square {
-      background-color: #171717; 
-      z-index: 2;
-    }
-
-    img {
-      z-index: 2;
-      opacity: 1;
-      width: 100%;
-      height: 100%;
-    }
+  .center-image {
+    width: 100% !important;
+    height: 100% !important;
   }
-  
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .outer-circle {
+    width: 80vmin !important;
+    height: 80vmin !important;
+  }
+
+  .inner-circle {
+    width: 80vmin !important;
+    height: 80vmin !important;
+  }
+}

@@ -1,22 +1,21 @@
-body, html {
-  background: radial-gradient(circle, #171717, #000000); /* Dark to lighter gray gradient */
-  height: 100vh; /* Make sure the gradient covers the full viewport height */
-  margin: 0; /* Remove default margin */
+body {
+  background: radial-gradient(circle, #171717, #000000);
+  height: 100vh;
+  margin: 0;
   overflow: hidden;
-  
 }
 
 .scroll-content-container {
   position: absolute;
-  left: 0; /* Align to the left */
-  width: 66.67%; /* 2/3 of the page width */
-  height: 100%; /* Full viewport height */
+  left: 0;
+  width: 66.67%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff; /* White text for contrast */
+  color: #fff;
   overflow-y: hidden;
-  z-index: 1; /* Ensure it's above the background */
+  z-index: 1;
 }
 
 .cirdiv {
@@ -24,50 +23,99 @@ body, html {
   width: 50%;
   display: flex;
   margin-left: 75%;
-  justify-content: flex-end; /* Align the CircularDiv to the right */
-  align-items: flex-end; /* Align it to the bottom */
+  justify-content: flex-end;
+  align-items: flex-start;
   position: relative;
-  /* background-color: #fff; */
 }
 
 .PieChart {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%) rotate(180deg); /* Rotate the disc by 180 degrees */
+  transform: translateX(-50%) rotate(180deg);
   width: 100%;
-  height: 50%; /* Only display top half of the pie chart */
-  z-index: 0; /* Ensure the pie chart is at the bottom layer */
-  transition: transform 1s ease-in-out; /* Smooth rotation transition */
+  height: 50%;
+  z-index: 0;
+  transition: transform 1s ease-in-out;
 }
 
-.trial{
-  background-color: white;
-  
+.navigation-buttons {
+  position: fixed;
+  top: 50%;
+  left: 75%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 80vh;
+  z-index: 10;
+}
+
+.nav-button {
+  background-color: #afd944ab;
+  color: #000000;
+  box-shadow: 0 0px 12px #b0d944;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.nav-button:hover {
+  color: #b0d944;
+  background-color: #000000;
+  transform: scale(1.1);
+}
+
+.nav-button:disabled {
+  background-color: transparent;
+  color: transparent;
+  cursor: none;
+  border: none;
+  box-shadow: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 8px rgba(176, 217, 68, 0.8);
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(176, 217, 68, 1);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 8px rgba(176, 217, 68, 0.8);
+  }
+}
+
+.nav-button.down.animate {
+  animation: pulse 1.5s infinite ease-in-out;
 }
 
 @media (max-width: 768px) {
-
-  html, body{
+  html,
+  body {
     display: flex;
     align-items: center;
+    overflow-y: hidden;
   }
-  .cirdiv{
+
+  .cirdiv {
     width: 100vw;
-    margin-top: 120vh;
+    margin-top: 105vh;
     margin-left: 0px;
     rotate: 90deg;
     align-items: center;
     justify-content: center;
-    /* background-color: #fff; */
-    /* display: none; */
-
-  }
-
-  .PieChart{
-    /* width: 100%; */
-    /* align-self: ; */
-    /* height: 400vh; */
   }
 
   .scroll-content-container {
@@ -76,29 +124,31 @@ body, html {
     height: 80vh;
   }
 
-}
-
-
-/* Mobile responsive design */
-/* @media (max-width: 768px) {
-  body, html{
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
+  .nav-button {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
   }
 
-  
+  .navigation-buttons {
+    position: fixed;
+    top: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    rotate: 180deg;
+    z-index: 10;
+  }
 
-  .cirdiv {
+  .nav-button.up {
     position: absolute;
-    height: 20vh;
-    bottom: 0;
-    bottom: -50%;
-    right: -15%;
-    margin: 0 auto; 
+    left: 62.5vw;
+    transform: rotate(90deg);
   }
 
-  .PieChart{
-    bottom: -50%;
+  .nav-button.down {
+    position: absolute;
+    right: 12.5vw;
+    transform: rotate(90deg);
   }
-} */
+}

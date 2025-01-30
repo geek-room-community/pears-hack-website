@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 // AboutUs.jsx
-import React, { useState } from 'react';
-import './about.css';
+import React from "react";
+import "./about.css";
 import PearLogo from "../SVGs/PearsLogo1.png";
 // import GRLogo from "../SVGs/GRLogo.svg";
 
@@ -65,16 +66,16 @@ const AboutUs = () => {
       md:text-xl
       hover:bg-[#121212] 
       rounded-[6px]
-      
+        mt-2
        bg-white
        text-gray-700
        font-bold 
        transition 
        duration-200 
       "
-
-          >Learn More</a>
-
+        >
+          Learn More
+        </a>
         {/* Image grid */}
         {/* <div className={`image-grid ${activeContent === 'pear' ? 'pear-grid' : 'geek-grid'}`}>
           {currentContent.images.map((img, index) => (
