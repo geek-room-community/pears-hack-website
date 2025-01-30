@@ -14,7 +14,7 @@ const Timeline = () => {
       <div className="relative w-[360px] sm:w-[500px]">
         {/* Vertical Line */}
         <div className="absolute left-1/2 transform -translate-x-1/2 w-[2px] bg-[#98FF98] h-full">
-          <div className="absolute w-full h-[60%] bg-[#6be246]" />
+          <div className="absolute w-full h-[60%] bg-[#79be58]" />
           <div className="absolute top-[60%] w-full h-[40%] bg-gray-500" />
         </div>
 
@@ -28,12 +28,8 @@ const Timeline = () => {
                 ${item.completed ? "bg-[#333333]" : "bg-[#333333]"}`}
               >
                 {/* Inner Circle */}
-                <div
-                  className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
-                  w-3 sm:w-5 h-3 sm:h-5 rounded-full ${
-                    item.completed ? "bg-[#6be246]" : "bg-white"
-                  }`}
-                />
+                <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+                  w-3 sm:w-5 h-3 sm:h-5 rounded-full ${item.completed ? 'bg-[#79be58]' : 'bg-white'}`} />
               </div>
 
               {/* Text */}
