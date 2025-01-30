@@ -54,7 +54,7 @@ const PieChart = ({ activeIndex, setActiveIndex }) => {
   }, []);
 
   const numberOfElements = 10;
-  const angleStep = 360 / 10;
+  const angleStep = 360 / numberOfElements;
 
   const activeColor = "#FFFFFF";
   const defaultColor = "#B0D944";
@@ -72,7 +72,7 @@ const PieChart = ({ activeIndex, setActiveIndex }) => {
     logo10,
   ];
 
-  // Calculate the rotation angle for the active index
+  // Rotation angle calculation
   const rotationAngle = angleStep * activeIndex;
 
   return (
@@ -89,11 +89,11 @@ const PieChart = ({ activeIndex, setActiveIndex }) => {
           style={{
             width: `${2 * dimensions.radius}px`,
             height: `${2 * dimensions.radius}px`,
-            transform: `translate(-50%, -50%) rotate(${rotationAngle}deg)`, // Rotate based on activeIndex
-            transition: "transform 0.5s ease", // Smooth rotation
+            transform: `translate(-50%, -50%) rotate(${rotationAngle}deg)`,
+            transition: "transform 0.5s ease-in-out",
           }}
         >
-          {Array.from({ length: numberOfElements }, (_, index) => {
+          {logos.map((logo, index) => {
             const angle = angleStep * (numberOfElements - index);
             const x =
               dimensions.radius +
@@ -101,11 +101,12 @@ const PieChart = ({ activeIndex, setActiveIndex }) => {
             const y =
               dimensions.radius +
               (dimensions.radius - 50) * Math.sin((angle * Math.PI) / 180);
-            const color = index === activeIndex ? activeColor : defaultColor;
 
-            return index < logos.length ? (
+            return (
               <div
                 key={index}
+                className="logo-wrapper"
+                onClick={() => setActiveIndex(index)}
                 style={{
                   top: `${y}px`,
                   left: `${x}px`,
@@ -114,15 +115,12 @@ const PieChart = ({ activeIndex, setActiveIndex }) => {
                   height: `${dimensions.radius / 9}px`,
                   cursor: "pointer",
                   zIndex: "1",
-                  opacity: index === activeIndex ? 1 : 0.25,
-                  // transform: index === activeIndex ? "translate(-50%, -50%) scale(1.25)" : "translate(-50%, -50%), scale(1)",
-                  transition: "opacity 1s ease", // Smooth scaling
+                  opacity: index === activeIndex ? 1 : 0.5,
+                  transition: "opacity 0.5s ease-in-out",
                 }}
-                className="logo-wrapper"
-                onClick={() => setActiveIndex(index)} // Update activeIndex on click
               >
                 <img
-                  src={logos[index]}
+                  src={logo}
                   alt={`Logo ${index + 1}`}
                   style={{
                     width: "100%",
@@ -131,7 +129,7 @@ const PieChart = ({ activeIndex, setActiveIndex }) => {
                   }}
                 />
               </div>
-            ) : null;
+            );
           })}
         </div>
 
