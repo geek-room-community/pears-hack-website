@@ -22,7 +22,7 @@ const Contact = () => {
           className="flex items-center justify-center"
           style={{ fontFamily: "'VT323', monospace" }}
         >
-          <span className="text-lg md:text-xl border-[#B6DD48] hover:bg-[#B6DD48] hover:text-black  p-2  border rounded-md  flex items-center justify-center">
+          <span className="text-lg md:text-xl border-[#B6DD48] hover:bg-transparent bg-[#B6DD48] hover:text-white text-black  p-2  border rounded-md  flex items-center justify-center">
             Join us on keet
           </span>
         </a>
