@@ -56,7 +56,7 @@ const JudgingPanel = () => {
             onClick={() => setActivePanel("judges")}
           >
             <span className="logo-judge flex justify-center items-center bg-[#818181] mr-12 w-[90px] h-[90px] rounded-full flex-shrink-0">
-              <img src={pearss} alt="pears" className="h-16" />
+              <img src={pearss} alt="pears" className="md:h-16 h-10" />
             </span>
             <div className="judge-title-panel-info">
               <span>JUDGES</span>
@@ -72,7 +72,7 @@ const JudgingPanel = () => {
             onClick={() => setActivePanel("mentors")}
           >
             <div className="logo-judge flex justify-center items-center bg-[#818181] mr-12 w-[90px] h-[90px] rounded-full flex-shrink-0">
-              <img src={pearss} alt="pears" className="h-16" />
+              <img src={pearss} alt="pears" className="md:h-16 h-10" />
             </div>
             <div className="judge-title-panel-info">
               <span>MENTORS</span>

@@ -9,7 +9,7 @@ function Card({ title, route, version }) {
     return (
       <div className="card">
         <div className="circle">
-          <img src={pears} alt="pears" className="h-16" />
+          <img src={pears} alt="pears" className="md:h-16 h-8" />
         </div>
         <div className="card-text">{title}</div>
         <Link to={route} className="team-card-v1">
@@ -29,7 +29,7 @@ function Card({ title, route, version }) {
         </Link>
         <div className="card-text">{title}</div>
         <div className="circle">
-          <img src={pears} alt="pears" className="h-16" />
+          <img src={pears} alt="pears" className="md:h-16 h-8" />
         </div>
       </div>
     );
