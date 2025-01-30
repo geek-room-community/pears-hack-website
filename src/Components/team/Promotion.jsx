@@ -9,7 +9,7 @@ import Frame from "../../SVGs/Frame.svg"
 
 import Harshit from "../../assets/team/promotion/Harshit.jpg"
 import Suresh from "../../assets/team/promotion/Suresh.jpg"
-import Neeraj from "../../assets/team/promotion/Neeraj.jpg"
+import Yash from "../../assets/team/promotion/Yash.jpg"
 
 const prom = [
   {
@@ -25,10 +25,10 @@ const prom = [
     github: "https://github.com",
   },
   {
-    name: "Neeraj Gupta",
-    image: Neeraj,
-    linkedin: "https://www.linkedin.com/in/neeraj-gupta-0991422a6",
-    github: "https://github.com/GuptaCoderPython",
+    name: "Yash Varma",
+    image: Yash,
+    linkedin: "https://www.linkedin.com/in/yash-varma-",
+    github: "https://github.com/YASH2204V",
   },
 ]
 
