@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "development"
+  ],
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not ios_saf <= 12.5",
+    "not and_ff <= 127",
+    "not firefox <= 127",
+    "not opera <= 110"
+  ],
+  "hints": {
+    "manifest-file-extension": "off",
+    "css-prefix-order": "off"
+  }
+}
