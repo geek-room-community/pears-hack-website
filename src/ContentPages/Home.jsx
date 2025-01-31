@@ -1,13 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
-// import "../styles/home.css"
 import PearLogo from "../SVGs/pears-logo.svg";
 import PearLogo1 from "../SVGs/PearsLogo1.png";
 
 import Timer from "../Components/Timer";
-// import Email from "../SVGs/email.svg";
-// import Web from "../SVGs/website.svg";
-// import Instagram from "../SVGs/instagram.svg";
-// import LinkedIn from "../SVGs/linkedin.svg";
 
 const Home = () => {
   const titleRef = useRef(null);
@@ -31,7 +26,7 @@ const Home = () => {
             <img src={PearLogo1} alt="" className="h-12 mb-4 md:h-20" />
             {/* <div>PEARS</div> */}
           </div>
-          <div id="gleen" className="text-[#b6dd48]">
+          <div id="gleen" className="text-[#b6dd48] ">
             GLOBAL
           </div>
           <div>HACKATHON</div>

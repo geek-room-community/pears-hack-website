@@ -56,7 +56,7 @@ const Prize = () => {
         <div className='mt-[2vh] md:mt-[12vh]'>
             <div className='w-full h-full grid grid-cols-2 gap-2 lg:grid-cols-3 md:gap-x-4 lg:gap-x-6 lg:gap-y-4'>
                 {prizeData.map((prize) => (
-                    <div key={prize.id} className='w-[170px] h-full md:w-[230px] md:h-52 lg:w-[275px] lg:h-64 py-4 lg:py-8 bg-[#1A1A1A] rounded-3xl text-white flex flex-col items-center justify-between'>
+                    <div key={prize.id} className='w-[170px] h-full md:w-[230px] md:h-52 lg:w-[275px] lg:h-64 py-4 lg:py-8 bg-[#1A1A1A] rounded-3xl text-white flex flex-col items-center justify-between '>
                         <div className='flex flex-row items-center justify-center'>
                             {prize.image.length > 0 ? prize.image.map((image) => (
                                 <img src={image} alt={prize.title} className={`${prize.class} object-contain`} />

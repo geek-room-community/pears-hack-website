@@ -13,8 +13,8 @@ const Timeline = () => {
     <div className="flex justify-center items-center w-full h-screen mt-0 sm:mt-28 ml-0 sm:ml-10">
       <div className="relative w-[360px] sm:w-[500px]">
         {/* Vertical Line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-[2px] bg-[#98FF98] h-full">
-          <div className="absolute w-full h-[60%] bg-[#6be246]" />
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-[2px] bg-[#b6dd48] h-full">
+          <div className="absolute w-full h-[60%] bg-[#b6dd48]" />
           <div className="absolute top-[60%] w-full h-[40%] bg-gray-500" />
         </div>
 
@@ -31,7 +31,7 @@ const Timeline = () => {
                 <div
                   className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
                   w-3 sm:w-5 h-3 sm:h-5 rounded-full ${
-                    item.completed ? "bg-[#6be246]" : "bg-white"
+                    item.completed ? "bg-[#b6dd48]" : "bg-white"
                   }`}
                 />
               </div>

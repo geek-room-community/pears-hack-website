@@ -12,7 +12,7 @@
   position: relative;
   border-radius: 50%;
   background-color: #020202;
-  box-shadow: 0 0 15px 5px rgb(176, 217, 68);
+  box-shadow: 0 0 200px 30px rgb(176, 217, 68);
   rotate: -115deg;
   max-width: 90vh;
   max-height: 90vh;
