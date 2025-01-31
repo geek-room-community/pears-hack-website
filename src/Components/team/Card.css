@@ -11,6 +11,9 @@
   aspect-ratio: 1;
   border-radius: 50%;
   background-color: #818181;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-text {
