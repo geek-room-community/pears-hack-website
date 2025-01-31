@@ -42,7 +42,7 @@ const AboutUs = () => {
       <div className="title-container">
         <div className={`title-wrapper `}>
           <div className="title-code-brackets">
-            <img src={pearContent.logo} alt="" height="30px" />
+            <img src={pearContent.logo} alt="" />
           </div>
         </div>
       </div>
@@ -60,19 +60,7 @@ const AboutUs = () => {
         <p className="descriptionn">Find out more at pears.com</p>
         <a
           href="https://pears.com/"
-          className="py-3 
-            px-4
-            md:px-8
-      md:text-xl
-      hover:bg-[#121212] 
-      rounded-[6px]
-        mt-2
-       bg-white
-       text-gray-700
-       font-bold 
-       transition 
-       duration-200 
-      "
+          className="py-3 px-4 md:px-8 md:text-xl rounded-[6px] mt-2 font-bold transition duration-200 hover:bg-transparent bg-[#B6DD48] hover:text-white text-black border hover:border-[#B6DD48]"
         >
           Learn More
         </a>
