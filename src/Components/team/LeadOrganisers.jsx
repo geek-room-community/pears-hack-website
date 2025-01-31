@@ -9,7 +9,6 @@ import Frame from "../../SVGs/Frame.svg";
 
 import Manass from "../../assets/team/leadorg/Manas.jpeg";
 import Vedant from "../../assets/team/leadorg/Vedant.jpg";
-import Yash from "../../assets/team/leadorg/Yash.jpg";
 import Akshay from "../../assets/team/leadorg/Akshay.jpg";
 
 const leadorg = [
@@ -24,12 +23,6 @@ const leadorg = [
     image: Vedant,
     linkedin: "https://www.linkedin.com/in/vedant-nagwanshi",
     github: "https://github.com/02-davinci-01",
-  },
-  {
-    name: "Yash Varma",
-    image: Yash,
-    linkedin: "https://www.linkedin.com/in/yash-varma-",
-    github: "https://github.com/YASH2204V",
   },
   {
     name: "Akshay kumar sharma",

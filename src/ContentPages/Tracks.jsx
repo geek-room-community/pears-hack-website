@@ -9,13 +9,13 @@ const Tracks = () => {
       <div className="grid grid-cols-2 max-w-5xl mx-auto gap-4 md:gap-6">
         <div className="flex flex-col gap-4 md:gap-6 order-2 md:order-2">
           <div className="bg-[#272727] rounded-[24px] md:rounded-[34px] p-4 md:p-6 border-2 border-white flex flex-col items-center justify-center min-h-[150px] md:min-h-[200px] font-['Bebas_Neue']">
-            <h2 className="text-[#B6DD48] text-xl sm:text-2xl md:text-3xl font-bold mb-2 md:mb-4">
+            <h2 className="text-[#B6DD48] text-xl sm:text-2xl md:text-4xl font-bold mb-2 md:mb-4">
               HOW TO BUILD ON
             </h2>
             <img
               src={PearLogo}
               alt="Pear logo"
-              className="w-20 sm:w-24 md:w-28 h-12 sm:h-14 md:h-16"
+              className="w-4/5 sm:w-3/4 md:w-3/4 h-auto sm:h-14 md:h-16"
             />
           </div>
 
