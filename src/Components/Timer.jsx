@@ -34,7 +34,7 @@ const Timer = () => {
   return (
     <div className="flex flex-col items-center justify-center w-fit md:w-full bg-[#333] border-2 border-white rounded-[35px] font-black">
       <button
-        className="flex flex-row items-center justify-center -mt-1 gap-3 md:gap-6 mx-3 md:mx-0 w-full z-10 font-bold text-[#aaf400] bg-[linear-gradient(180deg,#000,#333)] px-4 py-2 md:py-4 rounded-full border-4 border-[#aaf400] hover:bg-[linear-gradient(180deg,#333,#000)] hover:scale-105 hover:border-[#aaf400] transition-all duration-300 ease-in-out"
+        className="flex flex-row items-center justify-center -mt-1 gap-3 md:gap-6 mx-3 md:mx-0 w-full z-10 font-bold text-[#B6DD48] bg-[linear-gradient(180deg,#000,#333)] px-4 py-2 md:py-4 rounded-full border-4 border-[#B6DD48] hover:bg-[linear-gradient(180deg,#333,#000)] hover:scale-105 transition-all duration-300 ease-in-out"
         onClick={() =>
           window.open("https://lu.ma/9mqll98a", "_blank", "noopener noreferrer")
         }

@@ -1,7 +1,5 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from "react";
-import centreImage from "./center-gif.gif";
+import earth from "../SVGs/Group 24.svg";
 import "./PieChart.css";
 import logo1 from "../SVGs/Group 295.svg";
 import logo2 from "../SVGs/Info.svg";
@@ -33,16 +31,10 @@ const PieChart = ({ activeIndex, setActiveIndex }) => {
           outerRadius: smallestDimension * 0.45,
           isMobile: true,
         });
-      } else if (width >= 768 && width < 1024) {
-        setDimensions({
-          radius: smallestDimension * 0.4,
-          outerRadius: smallestDimension * 0.4,
-          isMobile: false,
-        });
       } else {
         setDimensions({
-          radius: smallestDimension * 0.4,
-          outerRadius: smallestDimension * 0.4 * 1.2,
+          radius: 290,
+          outerRadius: 370,
           isMobile: false,
         });
       }
@@ -55,9 +47,6 @@ const PieChart = ({ activeIndex, setActiveIndex }) => {
 
   const numberOfElements = 10;
   const angleStep = 360 / numberOfElements;
-
-  const activeColor = "#FFFFFF";
-  const defaultColor = "#B0D944";
 
   const logos = [
     logo1,
@@ -72,8 +61,10 @@ const PieChart = ({ activeIndex, setActiveIndex }) => {
     logo10,
   ];
 
-  // Rotation angle calculation
+  // Rotation angle calculation for logos
   const rotationAngle = angleStep * activeIndex;
+
+  const earthRotation = 170; //
 
   return (
     <div className="container">
@@ -82,6 +73,7 @@ const PieChart = ({ activeIndex, setActiveIndex }) => {
         style={{
           width: `${2 * dimensions.outerRadius}px`,
           height: `${2 * dimensions.outerRadius}px`,
+          position: "relative",
         }}
       >
         <div
@@ -89,6 +81,9 @@ const PieChart = ({ activeIndex, setActiveIndex }) => {
           style={{
             width: `${2 * dimensions.radius}px`,
             height: `${2 * dimensions.radius}px`,
+            position: "absolute",
+            top: "50%",
+            left: "50%",
             transform: `translate(-50%, -50%) rotate(${rotationAngle}deg)`,
             transition: "transform 0.5s ease-in-out",
           }}
@@ -108,6 +103,7 @@ const PieChart = ({ activeIndex, setActiveIndex }) => {
                 className="logo-wrapper"
                 onClick={() => setActiveIndex(index)}
                 style={{
+                  position: "absolute",
                   top: `${y}px`,
                   left: `${x}px`,
                   transform: "translate(-50%, -50%)",
@@ -133,20 +129,28 @@ const PieChart = ({ activeIndex, setActiveIndex }) => {
           })}
         </div>
 
+        {/* Centered Earth Image with Rotation */}
         <div
           className="center-image"
           style={{
-            width: dimensions.isMobile ? "100%" : `${dimensions.radius * 3}px`,
-            height: dimensions.isMobile ? "100%" : `${dimensions.radius * 3}px`,
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: `translate(-50%, -50%) rotate(${earthRotation}deg) translateX(-9%) `,
+            width: dimensions.isMobile ? "20%" : "490px", // Adjusted for mobile and desktop
+            height: dimensions.isMobile ? "20%" : "490px", // Adjusted for mobile and desktop
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
           <img
-            src={centreImage}
+            src={earth}
             alt="Center Image"
             style={{
               width: "100%",
               height: "100%",
-              objectFit: dimensions.isMobile ? "cover" : "contain",
+              objectFit: "contain",
             }}
           />
         </div>

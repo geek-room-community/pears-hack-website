@@ -1,25 +1,9 @@
 /* eslint-disable no-unused-vars */
-// AboutUs.jsx
 import React from "react";
 import "./about.css";
 import PearLogo from "../SVGs/PearsLogo1.png";
-// import GRLogo from "../SVGs/GRLogo.svg";
 
 const AboutUs = () => {
-  // const [activeContent, setActiveContent] = useState('pear'); // 'pear' or 'geek'
-
-  // const geekRoomContent = {
-  //   title: "GEEK ROOM",
-  //   description: "Geek Room is a widespread coding community with over 25000+ active coders nationwide. It was started by three coding enthusiasts with the main objective to create a transparent community where sharing of ideas and helping each other is the purpose.",
-  //   images: [
-  //     "/api/placeholder/200/150",
-  //     "/api/placeholder/200/150",
-  //     "/api/placeholder/200/150",
-  //     "/api/placeholder/200/150",
-  //   ],
-  //   logo:GRLogo,
-  // };
-
   const pearContent = {
     title: "PEARS",
     description:
@@ -49,7 +33,7 @@ const AboutUs = () => {
 
       {/* Content */}
       <div className="content-section mb-2">
-        <p className="description">
+        <p className="description  md:text-3xl tracking-wider px-2 py-2">
           Pear Runtime is an open-source, peer-to-peer (P2P) development
           platform revolutionizing how apps are built, deployed, and
           distributed. By eliminating the need for servers,it empowers to create
@@ -57,25 +41,16 @@ const AboutUs = () => {
           over data. Pear Runtime is shaping the future of the internet where
           creators and users are in control.
         </p>{" "}
-        <p className="descriptionn">Find out more at pears.com</p>
+        <p className="descriptionn  md:text-3xl tracking-widest px-2 py-3">
+          Find out more at pears.com
+        </p>
         <a
           href="https://pears.com/"
+
           className="py-3 px-4 md:px-8 md:text-xl rounded-[6px] mt-2 font-bold transition duration-200 hover:bg-transparent bg-[#B6DD48] hover:text-white text-black border hover:border-[#B6DD48]"
         >
           Learn More
         </a>
-        {/* Image grid */}
-        {/* <div className={`image-grid ${activeContent === 'pear' ? 'pear-grid' : 'geek-grid'}`}>
-          {currentContent.images.map((img, index) => (
-            <div key={index} className="image-wrapper">
-              <img
-                src={img}
-                alt={`Content ${index + 1}`}
-                className="content-image"
-              />
-            </div>
-          ))}
-        </div> */}
       </div>
     </div>
   );
