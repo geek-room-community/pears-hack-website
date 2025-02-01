@@ -8,7 +8,7 @@
   padding-right: 2rem;
   overflow-x: hidden;
   width: 850px;
-  margin-top: 40px;
+  margin-top: 100px;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -87,6 +87,7 @@
   font-weight: 200;
   letter-spacing: 0.4px;
   text-align: left;
+  color: #B6DD48;
 }
 
 /* Green subtitle text */

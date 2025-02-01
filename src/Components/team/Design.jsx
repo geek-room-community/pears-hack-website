@@ -68,7 +68,7 @@ const des = [
 ]
 
 const DesignCard = ({ mentor }) => (
-  <div className="group relative w-[9rem] h-[13rem] flex-shrink-0">
+  <div className="group relative mt-10 w-[9rem] h-[13rem] flex-shrink-0">
     <div className="absolute inset-0 bg-gray-900 rounded-lg overflow-hidden border-2 border-[#b6e33e] transition-transform duration-300 group-hover:scale-105">
       <img src={mentor.image || "/placeholder.svg"} alt={mentor.name} className="h-full w-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent">

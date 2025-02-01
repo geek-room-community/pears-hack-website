@@ -46,7 +46,7 @@ const FAQ = () => {
 
   return (
     <div
-      className="min-h-screen p-5 md:p-14 mt-64 md:mt-60"
+      className="p-5 md:p-14 md:mt-32"
       style={{ fontFamily: "'Be Vietnam Pro', sans-serif" }}
     >
       <div className="max-w-3xl mx-auto space-y-4 md:space-y-6">
