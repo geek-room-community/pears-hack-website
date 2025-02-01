@@ -47,7 +47,7 @@ const AboutUs = () => {
         <a
           href="https://pears.com/"
 
-          className="py-3 px-4 md:px-8 md:text-xl rounded-[6px] mt-2 font-bold transition duration-200 hover:bg-transparent bg-[#B6DD48] hover:text-white text-black border hover:border-[#B6DD48]"
+          className="py-3 px-4 md:px-8 md:text-xl rounded-[6px] mt-2 font-bold transition duration-200 hover:bg-transparent bg-[#B6DD48] hover:text-white text-black border border-[#B6DD48]"
         >
           Learn More
         </a>
