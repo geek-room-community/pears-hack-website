@@ -51,9 +51,9 @@ body {
 }
 
 .nav-button {
-  background-color: #afd944ab;
+  background-color: #B6DD48;
   color: #000000;
-  box-shadow: 0 0px 12px #b0d944;
+  /* box-shadow: 0 0px 12px #b0d944; */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 50%;
@@ -66,6 +66,7 @@ body {
   font-size: 25px;
   font-weight: bold;
   transition: background-color 0.3s, transform 0.2s ease;
+  border: 1px #B6DD48 solid;
 }
 
 .nav-button:hover {
