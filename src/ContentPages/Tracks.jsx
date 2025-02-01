@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import DataTransfer from "../SVGs/datatransfer.svg";
 import PearLogo from "../SVGs/PearsLogo1.png";
@@ -35,11 +36,17 @@ const Tracks = () => {
 
         <div className="bg-gray-600 rounded-[24px] md:rounded-[34px] p-12 sm:p-16 md:p-32 h-[312px] md:h-[420px] aspect-none flex items-center justify-center border-2 border-white order-1 md:order-1">
           <button className="rounded-full flex items-center justify-center">
-            <img
-              src={Video}
-              alt="Play button"
-              className="w-12 sm:w-16 md:w-auto"
-            />
+            <a
+              href="https://x.com/Pears_p2p/status/1757764429825864161"
+              target="_blank"
+              rel="noopener nonreferrer"
+            >
+              <img
+                src={Video}
+                alt="Play button"
+                className="w-12 sm:w-16 md:w-auto"
+              />
+            </a>
           </button>
         </div>
       </div>

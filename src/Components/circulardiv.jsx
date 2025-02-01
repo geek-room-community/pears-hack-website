@@ -136,9 +136,9 @@ const PieChart = ({ activeIndex, setActiveIndex }) => {
             position: "absolute",
             top: "50%",
             left: "50%",
-            transform: `translate(-50%, -50%) rotate(${earthRotation}deg) translateX(-9%) `,
-            width: dimensions.isMobile ? "20%" : "490px", // Adjusted for mobile and desktop
-            height: dimensions.isMobile ? "20%" : "490px", // Adjusted for mobile and desktop
+            transform: `translate(-50%, -50%) rotate(${earthRotation}deg) translateX(-14%) `,
+            width: dimensions.isMobile ? "20%" : "520px", // Adjusted for mobile and desktop
+            height: dimensions.isMobile ? "20%" : "520px", // Adjusted for mobile and desktop
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
