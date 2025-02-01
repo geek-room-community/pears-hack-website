@@ -50,29 +50,15 @@ const FAQ = () => {
       style={{ fontFamily: "'Be Vietnam Pro', sans-serif" }}
     >
       <div className="max-w-3xl mx-auto space-y-4 md:space-y-6">
-        {/* Search Bar */}
-        {/* <div className="relative">
-          <div className="absolute inset-y-0 left-3 md:left-4 flex items-center">
-            <img src={Search} alt="Search" className="w-4 h-4 md:w-5 md:h-5" />
-          </div>
-          <input
-            type="text"
-            placeholder="Search FAQs"
-            className="w-full pl-10 md:pl-12 pr-4 py-2 md:py-3 bg-[#333333] rounded-[90px] text-white text-sm md:text-base border-2 border-[#B6DD48] focus:outline-none"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-        </div> */}
-
         {/* Info Boxes */}
         <div className="grid grid-cols-2 gap-3 md:gap-4">
-          <div className="bg-[#333333] p-3 md:p-4 rounded-[20px] md:rounded-[30px] border-0 hover:border hover:border-[#B6DD48] transition-all duration-300">
+          <div className="bg-[#333333] p-3 md:p-4 rounded-[20px] md:rounded-[30px] border border-transparent hover:border-[#B6DD48]">
             <h3 className="text-white font-bold text-sm md:text-base">
               Team size
             </h3>
             <p className="text-gray-300 text-sm md:text-base">1 - 4</p>
           </div>
-          <div className="bg-[#333333] p-3 md:p-4 rounded-[20px] md:rounded-[30px] border-0 hover:border hover:border-[#B6DD48] transition-all duration-300">
+          <div className="bg-[#333333] p-3 md:p-4 rounded-[20px] md:rounded-[30px] border border-transparent hover:border-[#B6DD48]">
             <h3 className="text-white font-bold text-sm md:text-base">
               Registration costs?
             </h3>
@@ -85,11 +71,7 @@ const FAQ = () => {
           {faqQuestions.map((faq) => (
             <div
               key={faq.id}
-              className={`bg-[#333333] transition-all duration-300 ${
-                openQuestions[faq.id]
-                  ? "rounded-[20px] md:rounded-[30px] border border-[#B6DD48]"
-                  : "rounded-[30px] md:rounded-[90px] hover:border hover:border-[#B6DD48]"
-              }`}
+              className="bg-[#333333] rounded-[20px] md:rounded-[30px] border border-transparent hover:border-[#B6DD48]"
             >
               <button
                 className="w-full text-left"
@@ -102,15 +84,15 @@ const FAQ = () => {
                   <img
                     src={Down}
                     alt="Expand"
-                    className={`w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 ${
+                    className={`w-4 h-4 md:w-5 md:h-5 transition-transform duration-200 ${
                       openQuestions[faq.id] ? "rotate-180" : ""
                     }`}
                   />
                 </div>
               </button>
               <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openQuestions[faq.id] ? "max-h-48" : "max-h-0"
+                className={`overflow-hidden transition-all duration-200 ${
+                  openQuestions[faq.id] ? "max-h-96" : "max-h-0"
                 }`}
               >
                 <div className="p-3 md:p-4 pt-0 text-gray-300 text-sm md:text-base">
@@ -122,7 +104,7 @@ const FAQ = () => {
         </div>
 
         {/* Contact Link */}
-        <div className="text-center pt-4 md:pt-6">
+        <div className="text-center pt-4 md:pt-3">
           <p className="text-white text-sm md:text-base">
             Got more questions? Reach out to{" "}
             <button
