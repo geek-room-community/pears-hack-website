@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import PearLogo from "../SVGs/pears-logo.svg";
+// import PearLogo from "../SVGs/pears-logo.svg";
 import PearLogo1 from "../SVGs/PearsLogo1.png";
 
 import Timer from "../Components/Timer";
@@ -35,10 +35,6 @@ const Home = () => {
       <div className="timer-container">
         <Timer />
       </div>
-
-      {/* <div className="registerbttn">
-        <button className="registerbtn">REGISTER NOW</button>
-      </div> */}
     </div>
   );
 };
