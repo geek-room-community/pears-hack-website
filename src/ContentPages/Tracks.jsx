@@ -1,23 +1,24 @@
 import React from "react";
 import DataTransfer from "../SVGs/datatransfer.svg";
 import PearLogo from "../SVGs/PearsLogo1.png";
-import Video from "../SVGs/videobutton.svg";
+import video from "../assets/tracks/video.mp4";
 
 const Tracks = () => {
   return (
     <div className="mt-2 md:mt-32 p-12 md:px-0">
-      <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto gap-4 md:gap-6">
-        <div className="bg-gray-600 rounded-[24px] md:rounded-[34px] p-12 sm:p-16 md:p-32 h-[312px] md:h-[420px] flex items-center justify-center border-2 border-white">
+      <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto gap-4 md:gap-6">
+        <div className="bg-gray-600 rounded-[24px] md:w-[450px] md:rounded-[34px] p-10 sm:p-16 md:p-32 h-[312px] md:h-[420px] flex items-center justify-center border-2 border-white relative overflow-hidden">
           <a
             href="https://x.com/Pears_p2p/status/1757764429825864161"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full flex items-center justify-center"
+            className="w-full h-full flex items-center justify-center "
           >
-            <img
-              src={Video}
-              alt="Play button"
-              className="w-12 sm:w-16 md:w-auto"
+            <video
+              src={video}
+              autoPlay
+              loop
+              className="absolute inset-0 w-full h-full object-cover"
             />
           </a>
         </div>
