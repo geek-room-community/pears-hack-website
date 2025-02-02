@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/JudgesMentors.css";
-import linkedin from "../SVGs/linkedin.svg";
-import GitHub from "../SVGs/GitHub.svg";
+// import linkedin from "../SVGs/linkedin.svg";
+// import GitHub from "../SVGs/GitHub.svg";
 import pearss from "../SVGs/pears-logo.svg";
 const Judges = () => {
   return (
