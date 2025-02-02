@@ -147,11 +147,12 @@ const PieChart = ({ activeIndex, setActiveIndex }) => {
           <img
             src={earth}
             alt="Center Image"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "contain",
-            }}
+            className="earth-image"
+            // style={{
+            //   width: "100%",
+            //   height: "100%",
+            //   objectFit: "contain",
+            // }}
           />
         </div>
       </div>

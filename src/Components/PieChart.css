@@ -17,6 +17,7 @@
   max-width: 90vh;
   max-height: 90vh;
   aspect-ratio: 1;
+  overflow: visible; /* Ensures shadow is visible */
 }
 
 .inner-circle {
@@ -26,6 +27,12 @@
   border-radius: 50%;
   background-color: #171717;
   transition: transform 0.25s ease-in-out;
+}
+
+.earth-image {
+  width: "100%";
+  height: "100%";
+  object-fit: "contain";
 }
 
 .center-image {
@@ -73,9 +80,14 @@
     min-height: 90vh;
   }
 
+  .earth-image {
+    width: 50%;
+    height: 50%;
+  }
+
   .outer-circle {
-    width: 90vmin !important;
-    height: 90vmin !important;
+    width: 90vw !important;
+    height: 90vw !important;
     box-shadow: 0 0 10px 3px rgb(176, 217, 68);
   }
 
