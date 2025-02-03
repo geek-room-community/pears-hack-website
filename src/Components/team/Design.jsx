@@ -68,7 +68,7 @@ const des = [
 ]
 
 const DesignCard = ({ mentor }) => (
-  <div className="group relative mt-10 w-[9rem] h-[13rem] flex-shrink-0">
+  <div className="group relative mt-10 w-[9rem] h-[12rem] flex-shrink-0">
     <div className="absolute inset-0 bg-gray-900 rounded-lg overflow-hidden border-2 border-[#b6e33e] transition-transform duration-300 group-hover:scale-105">
       <img src={mentor.image || "/placeholder.svg"} alt={mentor.name} className="h-full w-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
@@ -110,7 +110,7 @@ const Design = () => {
   const bottomMentors = des.slice(halfIndex)
 
   return (
-    <section className="relative h-[95vh] -mt-20 md:mt-5 w-[50rem] py-[1rem] overflow-hidden">
+    <section className="relative h-[95vh] mt-5 md:mt-5 w-[50rem] py-[1rem] overflow-hidden">
       <Link to="/">
         <button className="back-button">
           <img src={Frame || "/placeholder.svg"} alt="Back-Arrow" className="back-arrow w-[1.5rem] h-8 mr-2" />

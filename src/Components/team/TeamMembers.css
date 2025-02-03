@@ -23,9 +23,9 @@
   }
 
   .back-button {
-    top:auto;
-    bottom: 8rem; 
-    left: 9rem; 
+    top: 10rem;
+    /* bottom: 8rem;  */
+    left: 14rem; 
   }
 
   .back-arrow {
