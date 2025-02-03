@@ -5,9 +5,9 @@ import video from "../assets/tracks/video.mp4";
 
 const Tracks = () => {
   return (
-    <div className="mt-2 md:mt-32 p-12 md:px-0">
+    <div className="px-12 py-6 mb-52 md:mb-16 md:px-0">
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto gap-4 md:gap-6">
-        <div className="bg-gray-600 rounded-[24px] md:w-[450px] md:rounded-[34px] p-10 sm:p-16 md:p-32 h-[312px] md:h-[420px] flex items-center justify-center border-2 border-white relative overflow-hidden">
+        <div className="bg-gray-600 rounded-[24px] md:w-[450px] md:rounded-[34px] p-10 sm:p-16 md:p-32 h-[230px] md:h-[420px] flex items-center justify-center border-2 border-white relative overflow-hidden">
           <a
             href="https://x.com/Pears_p2p/status/1757764429825864161"
             target="_blank"

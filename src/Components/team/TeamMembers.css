@@ -1,51 +1,48 @@
 .team-members {
   /* border: 1px solid #272727; */
-  margin-top: 10%;
   margin-left: 18vw;
+  margin-bottom: 20rem;
 }
 
 .back-button {
   position: absolute;
-  top: 5.8rem; 
-  left: 1rem; 
-  z-index: 50; 
+  left: 1rem;
+  z-index: 50;
 }
 
-.back-arrow{
-  width:2rem;
+.back-arrow {
+  width: 2rem;
   height: auto;
 }
 
 @media screen and (max-width: 718px) {
   .team-members {
     margin-left: 0;
-    margin-bottom: 2rem;
   }
 
   .back-button {
-    top:auto;
-    bottom: 8rem; 
-    left: 9rem; 
+    top: auto;
+    bottom: 8rem;
+    left: 9rem;
   }
 
   .back-arrow {
-    width: 3rem; 
+    width: 3rem;
   }
 }
-
 
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-33.33% - 1rem)); 
+    transform: translateX(calc(-33.33% - 1rem));
   }
 }
 
 @keyframes scroll-right {
   0% {
-    transform: translateX(calc(-33.33% - 1rem)); 
+    transform: translateX(calc(-33.33% - 1rem));
   }
   100% {
     transform: translateX(0);
@@ -65,8 +62,6 @@
   backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
 }
-
-
 
 .scroll-left:hover,
 .scroll-right:hover {

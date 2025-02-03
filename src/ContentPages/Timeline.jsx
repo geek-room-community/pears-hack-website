@@ -10,7 +10,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center w-full h-screen mt-0 sm:mt-28 ml-0 sm:ml-11">
+    <div className="flex justify-center items-center mb-64 py-8 max-h-[80vh] md:mb-5 xl:mb-8 overflow-auto scrollbar-hide">
       <div className="relative w-[360px] sm:w-[500px]">
         {/* Vertical Line */}
         <div className="absolute left-1/2 transform -translate-x-1/2 w-[2px] bg-[#b6dd48] h-full">
@@ -19,7 +19,7 @@ const Timeline = () => {
         </div>
 
         {/* Timeline Items */}
-        <div className="space-y-16 sm:space-y-32 relative">
+        <div className="space-y-16 md:space-y-24 xl:space-y-28 relative">
           {timelineItems.map((item) => (
             <div key={item.id} className="flex items-center relative">
               {/* Outer Circle */}
@@ -30,20 +30,18 @@ const Timeline = () => {
                 {/* Inner Circle */}
                 <div
                   className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
-                  w-3 sm:w-5 h-3 sm:h-5 rounded-full ${
-                    item.completed ? "bg-[#b6dd48]" : "bg-white"
-                  }`}
+                  w-3 sm:w-5 h-3 sm:h-5 rounded-full ${item.completed ? "bg-[#b6dd48]" : "bg-white"
+                    }`}
                 />
               </div>
 
               {/* Text */}
               <div
-                className={`absolute ${
-                  item.align === "left"
-                    ? "text-right right-[55%] pr-4 sm:right-[calc(50%+3rem)]"
-                    : item.align === "right" &&
-                      "text-center sm:text-left left-[70%] transform -translate-x-1/2 sm:translate-x-0 sm:left-[calc(50%+3rem)]"
-                } w-[45%] sm:w-auto`}
+                className={`absolute ${item.align === "left"
+                  ? "text-right right-[55%] pr-4 sm:right-[calc(50%+3rem)]"
+                  : item.align === "right" &&
+                  "text-center sm:text-left left-[70%] transform -translate-x-1/2 sm:translate-x-0 sm:left-[calc(50%+3rem)]"
+                  } w-[45%] sm:w-auto`}
               >
                 <h3 className="font-['Bebas_Neue'] text-sm sm:text-3xl tracking-wider text-white whitespace-nowrap">
                   {item.title}

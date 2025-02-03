@@ -65,9 +65,8 @@ const Carousel = ({ mentors, direction = "left" }) => {
   return (
     <div className="flex flex-nowrap relative w-full h-[19rem] py-2 overflow-hidden">
       <div
-        className={`flex flex-nowrap gap-4 ${
-          direction === "left" ? "scroll-left" : "scroll-right"
-        }`}
+        className={`flex flex-nowrap gap-4 ${direction === "left" ? "scroll-left" : "scroll-right"
+          }`}
       >
         {repeatedMentors.map((mentor, index) => (
           <LeadCard key={`${mentor.name}-${index}`} mentor={mentor} />
@@ -89,7 +88,7 @@ const lead = () => {
           />
         </button>
       </Link>
-      <div className="max-w-7xl mt-5 mx-auto px-4 h-full flex flex-col justify-center">
+      <div className="max-w-7xl mx-auto px-4 h-full flex flex-col justify-center">
         <div className="flex flex-col gap-[1rem]">
           {/* <Carousel mentors={topMentors} direction="left" /> */}
           <Carousel mentors={leadorg} direction="right" />

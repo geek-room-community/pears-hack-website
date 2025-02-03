@@ -46,7 +46,7 @@ const FAQ = () => {
 
   return (
     <div
-      className="p-5 md:p-14 md:mt-32"
+      className="mb-48 lg:mb-24 px-6 md:p-0"
       style={{ fontFamily: "'Be Vietnam Pro', sans-serif" }}
     >
       <div className="max-w-3xl mx-auto space-y-4 md:space-y-6">
@@ -84,16 +84,14 @@ const FAQ = () => {
                   <img
                     src={Down}
                     alt="Expand"
-                    className={`w-4 h-4 md:w-5 md:h-5 transition-transform duration-200 ${
-                      openQuestions[faq.id] ? "rotate-180" : ""
-                    }`}
+                    className={`w-4 h-4 md:w-5 md:h-5 transition-transform duration-200 ${openQuestions[faq.id] ? "rotate-180" : ""
+                      }`}
                   />
                 </div>
               </button>
               <div
-                className={`overflow-hidden transition-all duration-200 ${
-                  openQuestions[faq.id] ? "max-h-96" : "max-h-0"
-                }`}
+                className={`overflow-hidden transition-all duration-200 ${openQuestions[faq.id] ? "max-h-96" : "max-h-0"
+                  }`}
               >
                 <div className="p-3 md:p-4 pt-0 text-gray-300 text-sm md:text-base">
                   {faq.answer}
