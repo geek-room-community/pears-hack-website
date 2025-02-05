@@ -33,7 +33,7 @@ const JudgingPanel = () => {
       return (
         <div className="mentor-component">
           <button
-            className="back-button"
+            className="back-button back-buttonn"
             onClick={() => setActivePanel("judgingPanel")}
           >
             <img
