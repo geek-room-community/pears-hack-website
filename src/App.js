@@ -29,6 +29,10 @@ function App() {
       setActiveIndex((prev) => prev - 1);
     } else if (e.key === "ArrowDown" && activeIndex < totalIndexes - 1) {
       setActiveIndex((prev) => prev + 1);
+    } else if (e.key === "ArrowDown" && activeIndex === totalIndexes - 1) {
+      setActiveIndex(0); // Go to the first page
+    } else if (e.key === "ArrowUp" && activeIndex === 0) {
+      setActiveIndex(totalIndexes - 1); // Go to the last page
     }
   };
 
@@ -41,12 +45,16 @@ function App() {
       setTimeout(() => {
         setIsAnimating(false);
       }, 1000);
+    } else if (activeIndex === totalIndexes - 1) {
+      setActiveIndex(0); // Reset to the first page
     }
   };
 
   const handlePrevious = () => {
     if (activeIndex > 0) {
       setActiveIndex((prev) => prev - 1);
+    } else if (activeIndex === 0) {
+      setActiveIndex(totalIndexes - 1); // Go to the last page
     }
   };
 
@@ -81,14 +89,12 @@ function App() {
         <button
           className="nav-button up"
           onClick={handlePrevious}
-          disabled={activeIndex === 0} // Disable when at the first page
         >
           <FaChevronUp />
         </button>
         <button
-          className={`nav-button down ${activeIndex === 0 ? "animate" : ""}`} // Add animation class conditionally
+          className="nav-button down"
           onClick={handleNext}
-          disabled={activeIndex === totalIndexes - 1}
         >
           <FaChevronDown />
         </button>

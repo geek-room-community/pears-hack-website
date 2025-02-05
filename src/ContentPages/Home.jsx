@@ -73,7 +73,7 @@ const Home = () => {
           style={{ transition: "opacity 0.4s ease-in-out" }}
         >
           <div
-            className={`bg-[#000] shadow-[0_0_20px_#B6DD48] text-[#B6DD48] p-6 md:p-10 rounded-2xl w-11/12 md:w-2/3 lg:w-1/2 relative transition-all duration-500 ${
+            className={`bg-[#000] border-2 border-[#B6DD48] text-[#B6DD48] p-6 md:p-10 rounded-2xl w-11/12 md:w-2/3 lg:w-1/2 relative transition-all duration-500 ${
               showModal ? "opacity-100 scale-100" : "opacity-0 scale-90"
             }`}
             style={{
