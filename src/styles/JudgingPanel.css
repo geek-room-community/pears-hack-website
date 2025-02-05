@@ -29,6 +29,8 @@ span {
   align-items: center;
   justify-content: flex-start;
   padding: 0.2rem 0.7rem;
+  position: absolute;
+
   /* margin-top: 5rem; */
 }
 
@@ -70,9 +72,11 @@ span {
     height: auto;
   }
 
-  .back-button {
-    margin-bottom: 20.4rem;
-    margin-right:rem; 
+  .back-buttonn {
+    /* margin-bottom: 20.4rem; */
+    top: 2rem; 
+    left: 5rem; 
+    z-index: 50;
   }
 
   .back-arrow {

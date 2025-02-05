@@ -118,7 +118,7 @@ const Web = () => {
   // const bottomMentors = webdev.slice(halfIndex)
 
   return (
-    <section className="relative h-[95vh] -mt-20 md:mt-5 w-[50rem] py-[1rem] ">
+    <section className="relative h-[95vh] mt-16 md:mt-20 w-[50rem] py-[1rem] ">
       <Link to="/">
         <button className="back-button">
           <img
