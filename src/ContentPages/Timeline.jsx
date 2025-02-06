@@ -45,7 +45,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center w-full h-screen mb-10 sm:mt-28 ml-0 sm:ml-11">
+    <div className="flex justify-center items-center w-full mb-60 lg:mb-20">
       <div className="relative w-[360px] sm:w-[500px]">
         {/* Vertical Line */}
         <div className="absolute left-1/2 transform -translate-x-1/2 w-[2px] bg-[#b6dd48] h-full">
@@ -53,7 +53,7 @@ const Timeline = () => {
         </div>
 
         {/* Timeline Items */}
-        <div className="space-y-16 sm:space-y-32 relative">
+        <div className="space-y-24 xl:space-y-28 relative">
           {timelineItems.map((item) => (
             <div key={item.id} className="flex flex-col items-center relative">
               {/* Outer Circle */}
@@ -64,19 +64,17 @@ const Timeline = () => {
                 {/* Inner Circle */}
                 <div
                   className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
-                  w-3 sm:w-5 h-3 sm:h-5 rounded-full ${
-                    item.completed ? "bg-[#b6dd48]" : "bg-white"
-                  }`}
+                  w-3 sm:w-5 h-3 sm:h-5 rounded-full ${item.completed ? "bg-[#b6dd48]" : "bg-white"
+                    }`}
                 />
               </div>
 
               {/* Title */}
               <div
-                className={`absolute ${
-                  item.align === "left" && item.dateAlign === `right`
-                    ? "text-right right-[55%] pr-4 sm:right-[calc(50%+3rem)]"
-                    : "text-left left-[55%] pl-4 sm:left-[calc(50%+3rem)]"
-                } w-[45%] sm:w-auto`}
+                className={`absolute ${item.align === "left" && item.dateAlign === `right`
+                  ? "text-right right-[55%] pr-4 sm:right-[calc(50%+3rem)]"
+                  : "text-left left-[55%] pl-4 sm:left-[calc(50%+3rem)]"
+                  } w-[45%] sm:w-auto`}
               >
                 <h3 className="font-['Bebas_Neue'] text-sm sm:text-2xl tracking-wider text-white whitespace-nowrap">
                   {item.title}

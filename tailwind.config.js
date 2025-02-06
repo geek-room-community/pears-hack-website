@@ -20,6 +20,9 @@ export default {
           '100%': { transform: 'translateX(100%)' },
         },
       },
+      fontFamily: {
+        vt323: ['VT323', 'monospace'],
+      },
     },
   },
   plugins: [],

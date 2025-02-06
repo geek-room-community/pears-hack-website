@@ -46,7 +46,7 @@ const FAQ = () => {
 
   return (
     <div
-      className="p-5 md:p-14 md:mt-32"
+      className="mb-[17rem] lg:mb-32 px-6 md:p-0"
       style={{ fontFamily: "'Be Vietnam Pro', sans-serif" }}
     >
       <div className="max-w-3xl mx-auto space-y-4 md:space-y-6">
@@ -77,25 +77,23 @@ const FAQ = () => {
                 className="w-full text-left"
                 onClick={() => toggleQuestion(faq.id)}
               >
-                <div className="p-3 md:p-4 flex justify-between items-center">
+                <div className="px-3 py-2 md:px-4 md:py-3 flex justify-between items-center">
                   <h3 className="text-white text-sm md:text-base pr-6 md:pr-8">
                     {faq.question}
                   </h3>
                   <img
                     src={Down}
                     alt="Expand"
-                    className={`w-4 h-4 md:w-5 md:h-5 transition-transform duration-200 ${
-                      openQuestions[faq.id] ? "rotate-180" : ""
-                    }`}
+                    className={`w-4 h-4 md:w-5 md:h-5 transition-transform duration-200 ${openQuestions[faq.id] ? "rotate-180" : ""
+                      }`}
                   />
                 </div>
               </button>
               <div
-                className={`overflow-hidden transition-all duration-200 ${
-                  openQuestions[faq.id] ? "max-h-96" : "max-h-0"
-                }`}
+                className={`overflow-hidden transition-all duration-200 ${openQuestions[faq.id] ? "max-h-96" : "max-h-0"
+                  }`}
               >
-                <div className="p-3 md:p-4 pt-0 text-gray-300 text-sm md:text-base">
+                <div className="px-3 pb-2 md:px-4 pt-0 text-left text-gray-300 text-sm md:text-base">
                   {faq.answer}
                 </div>
               </div>

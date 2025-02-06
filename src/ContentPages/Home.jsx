@@ -20,15 +20,15 @@ const Home = () => {
   }, [isModalOpen]);
 
   return (
-    <div className="md:mt-[12vh] mt-10 flex flex-col items-center justify-center gap-5 relative">
-      <div className="lineptitle flex flex-row justify-start items-center md:gap-9 -ml-[5vw] gap-5">
-        <div className="leftline bg-white h-[180px] md:h-[290px] w-2 rounded-full"></div>
+    <div className="mb-[27vh] md:mb-[18vh] lg:mb-[14vh] xl:mb-[9vh] flex flex-col justify-center md:items-start items-center gap-4">
+      <div className="lineptitle flex flex-row justify-start items-center md:gap-9 gap-5">
+        <div className="leftline bg-white h-[180px] xl:h-[290px] w-2 rounded-full"></div>
         <div
-          className="title flex flex-col items-start justify-center text-[55px] leading-[1.2em] tracking-[4px] md:text-[85px] md:leading-[1.3em] md:tracking-[7px]"
+          className="title flex flex-col items-start justify-center text-[55px] leading-[1.2em] tracking-[4px] xl:text-[85px] xl:leading-[1.2em] md:tracking-[7px]"
           style={{ fontFamily: font }}
         >
           <div className="topimg flex flex-row items-center justify-center gap-4">
-            <img src={PearLogo1} alt="" className="h-12 mb-4 md:h-20" />
+            <img src={PearLogo1} alt="" className="h-[3.5rem] mb-2 lg:mb-4 xl:h-20" />
           </div>
           <div id="gleen" className="text-[#b6dd48]">
             GLOBAL
@@ -61,21 +61,19 @@ const Home = () => {
         </button>
       </div>
 
-      <div className="timer-container">
+      <div className="w-fit mx-auto">
         <Timer />
       </div>
 
       {isModalOpen && (
         <div
-          className={`fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-70 backdrop-blur-sm z-50 transition-all duration-500 ${
-            showModal ? "opacity-100" : "opacity-0"
-          }`}
+          className={`fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-70 backdrop-blur-sm z-50 transition-all duration-500 ${showModal ? "opacity-100" : "opacity-0"
+            }`}
           style={{ transition: "opacity 0.4s ease-in-out" }}
         >
           <div
-            className={`bg-[#000] border-2 border-[#B6DD48] text-[#B6DD48] p-6 md:p-10 rounded-2xl w-11/12 md:w-2/3 lg:w-1/2 relative transition-all duration-500 ${
-              showModal ? "opacity-100 scale-100" : "opacity-0 scale-90"
-            }`}
+            className={`bg-[#000] border-2 border-[#B6DD48] text-[#B6DD48] p-6 md:p-10 rounded-2xl w-11/12 md:w-2/3 lg:w-1/2 relative transition-all duration-500 ${showModal ? "opacity-100 scale-100" : "opacity-0 scale-90"
+              }`}
             style={{
               transform: showModal ? "scale(1)" : "scale(0.9)",
               transition:

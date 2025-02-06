@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
 body {
   background: radial-gradient(circle, #171717, #000000);
   height: 100vh;
@@ -51,7 +53,7 @@ body {
 }
 
 .nav-button {
-  background-color: #B6DD48;
+  background-color: #b6dd48;
   color: #000000;
   /* box-shadow: 0 0px 12px #b0d944; */
   backdrop-filter: blur(8px);
@@ -66,7 +68,7 @@ body {
   font-size: 25px;
   font-weight: bold;
   transition: background-color 0.3s, transform 0.2s ease;
-  border: 1px #B6DD48 solid;
+  border: 1px #b6dd48 solid;
 }
 
 .nav-button:hover {

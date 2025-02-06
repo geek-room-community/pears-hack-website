@@ -32,7 +32,7 @@ const Timer = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-16 w-fit md:w-full bg-[#333] border-2 border-white rounded-[35px] font-black">
-      
+
       <div className="flex flex-row items-center justify-center gap-1 my-5 mx-6 md:mx-10 md:my-7 w-full text-xl md:text-2xl font-bold">
         <span>{String(timeLeft.days).padStart(2, "0")}</span> :
         <span>{String(timeLeft.hours).padStart(2, "0")}</span> :

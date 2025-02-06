@@ -28,8 +28,8 @@ const ScrollContent = ({ currentIndex, handleNext, handlePrevious }) => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center md:items-start md:ml-[calc(10%-10px)] h-screen w-screen">
-      <div className="hidden absolute top-[4vh] md:flex flex-row items-center justify-between px-2 py-2 w-3/5 rounded-full bg-[#2a2a2a]">
+    <div className="mt-[12vh] xl:mt-[10vh] flex flex-col gap-2 justify-between items-center md:items-start md:ml-[calc(10%-10px)] h-screen w-screen">
+      <div className="hidden md:flex z-50 flex-row items-center justify-between px-2 py-2 w-3/5 rounded-full bg-[#2a2a2a]">
         <div className="flex flex-row items-center justify-center gap-2 bg-[#242323] rounded-full px-2">
           <img src={PearLogo} alt="PearsLogo" className="w-12 h-12" />
           <img src={GRLogo} alt="GRLogo" className="w-16 h-16" />
@@ -51,7 +51,7 @@ const ScrollContent = ({ currentIndex, handleNext, handlePrevious }) => {
           }
         </div>
       </div>
-      <div className="md:hidden absolute top-[2vh] flex flex-row items-center justify-between gap-2 px-3 py-2 w-5/6 rounded-full bg-[#2a2a2a]">
+      <div className="md:hidden z-50 mt-12 flex flex-row items-center justify-between gap-2 px-3 py-2 w-5/6 rounded-full bg-[#2a2a2a]">
         <img src={PearLogo} alt="PearsLogo" className="w-10 h-10" />
         <div className="text-white text-xl font-semibold flex flex-1 items-center justify-center">
           {
@@ -71,7 +71,7 @@ const ScrollContent = ({ currentIndex, handleNext, handlePrevious }) => {
         </div>
         <img src={GRLogo} alt="GRLogo" className="w-10 h-10" />
       </div>
-      <div className="relative text-white text-center">
+      <div className="mb-10 text-white text-center">
         {pages[currentIndex]}
       </div>
     </div>
