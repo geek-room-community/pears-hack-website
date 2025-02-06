@@ -73,7 +73,7 @@ const Promotion = () => {
   // const bottomMentors = webdev.slice(halfIndex)
 
   return (
-    <section className="flex flex-col justify-start gap-8 xl:gap-16 2xl:gap-20 mt-16 md:mt-10 2xl:mt-10 h-[95vh] w-[23rem] md:w-[30rem] lg:w-[40rem] xl:w-[50rem] overflow-hidden">
+    <section className="flex flex-col justify-start gap-8 xl:gap-20 mt-16 md:mt-10 2xl:mt-10 h-[95vh] w-[23rem] md:w-[30rem] lg:w-[40rem] xl:w-[50rem] overflow-hidden">
       <Link to="/">
         <button className="back-button ml-3">
           <img
