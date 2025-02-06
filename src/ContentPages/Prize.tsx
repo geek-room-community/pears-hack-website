@@ -53,14 +53,14 @@ const Prize = () => {
     ];
 
     return (
-        <div className='mb-[24vh] md:mb-4 h-fit overflow-y-auto scrollbar-hide'>
+        <div className='mb-60 xl:mb-24 2xl:mb-4 h-fit overflow-y-auto scrollbar-hide'>
             <div className='w-full h-full grid grid-cols-2 gap-2 lg:grid-cols-3 md:gap-x-4 lg:gap-x-6 lg:gap-y-4'>
                 {prizeData.map((prize) => (
                     <div key={prize.id} className='w-[170px] h-full lg:w-[215px] lg:h-52 xl:w-[250px] xl:h-64 py-4 lg:py-8 bg-[#1A1A1A] rounded-3xl text-white flex flex-col items-center justify-between '>
                         <div className='flex flex-row items-center justify-center'>
                             {prize.image.length > 0 ? prize.image.map((image) => (
                                 <img src={image} alt={prize.title} className={`${prize.class} object-contain`} />
-                            )) : <p className='text-white text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold -tracking-[0.06em] pt-6 xl:pt-12'>{prize.description}</p>}
+                            )) : <p className='text-white text-2xl md:text-4xl xl:text-6xl font-bold -tracking-[0.06em] pt-6 xl:pt-12'>{prize.description}</p>}
                         </div>
                         <h1 className='text-white text-sm lg:text-lg xl:text-2xl font-medium md:font-bold -tracking-[0.05em] px-6'>{prize.title}</h1>
                     </div>

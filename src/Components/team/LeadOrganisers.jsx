@@ -78,7 +78,7 @@ const Carousel = ({ mentors, direction = "left" }) => {
 
 const lead = () => {
   return (
-    <section className="flex flex-col justify-start gap-10 mt-16 md:mt-4 h-[95vh] w-[23rem] md:w-[30rem] lg:w-[40rem] xl:w-[50rem] overflow-hidden">
+    <section className="flex flex-col justify-start gap-8 xl:gap-16 2xl:gap-12 mt-16 md:mt-10 2xl:mt-10 h-[95vh] w-[23rem] md:w-[30rem] lg:w-[40rem] xl:w-[50rem] overflow-hidden">
       <Link to="/">
         <button className="back-button ml-3">
           <img
