@@ -4,8 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  overflow-x: hidden;
   width: full;
   box-sizing: border-box;
   overflow: hidden;
@@ -38,18 +36,18 @@
 .buttonsss:nth-child(1),
 .buttonsss:nth-child(5) {
   height: 81px;
-  margin-left: 22rem;
+  margin-left: 14rem;
 }
 
 .buttonsss:nth-child(2),
 .buttonsss:nth-child(4) {
   height: 82px;
-  margin-left: 10rem;
+  margin-left: 6rem;
 }
 
 .buttonsss:nth-child(3) {
   height: 83px;
-  margin-left: 0rem;
+  margin-left: -2rem;
 }
 
 /* Circular disc container */
@@ -202,6 +200,15 @@
 
 @media screen and (max-width: 480px) {
   /* Further adjustments for very small screens */
+  /* Buttons container */
+  .buttonss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 11rem;
+    margin-right: 5rem;
+  }
+
   .buttonsss {
     padding: 10px 12px;
     gap: 8px;

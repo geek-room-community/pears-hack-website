@@ -29,8 +29,6 @@ span {
   align-items: center;
   justify-content: flex-start;
   padding: 0.2rem 0.7rem;
-  position: absolute;
-
   /* margin-top: 5rem; */
 }
 
@@ -105,6 +103,10 @@ span {
   .button {
     height: 120px;
     padding: 1rem 1.5rem;
+  }
+
+  .back-buttonn {
+    margin-top: 4rem;
   }
 
   .panel-info img {

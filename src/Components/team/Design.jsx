@@ -100,9 +100,8 @@ const Carousel = ({ mentors, direction = "left" }) => {
   return (
     <div className="flex flex-nowrap relative w-full h-[19rem] py-2 overflow-hidden ">
       <div
-        className={`flex flex-nowrap gap-4 ${
-          direction === "left" ? "scroll-left" : "scroll-right"
-        }`}
+        className={`flex flex-nowrap gap-4 ${direction === "left" ? "scroll-left" : "scroll-right"
+          }`}
       >
         {repeatedMentors.map((mentor, index) => (
           <DesignCard key={`${mentor.name}-${index}`} mentor={mentor} />
@@ -118,17 +117,17 @@ const Design = () => {
   // const bottomMentors = webdev.slice(halfIndex)
 
   return (
-    <section className="relative h-[95vh] mt-16 md:mt-20 w-[50rem] py-[1rem] ">
+    <section className="flex flex-col justify-start gap-10 mt-16 md:mt-4 h-[95vh] w-[23rem] md:w-[30rem] lg:w-[40rem] xl:w-[50rem] overflow-hidden">
       <Link to="/">
-        <button className="back-button">
+        <button className="back-button ml-3">
           <img
-            src={Frame}
+            src={Frame || "/placeholder.svg"}
             alt="Back-Arrow"
             className="back-arrow w-[1.5rem] h-8 mr-2"
           />
         </button>
       </Link>
-      <div className="max-w-7xl mt-5 mx-auto px-4 h-full flex flex-col justify-center">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col justify-center">
         <div className="flex flex-col gap-[1rem]">
           {/* <Carousel mentors={topMentors} direction="left" /> */}
           <Carousel mentors={des} direction="right" />

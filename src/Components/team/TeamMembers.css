@@ -5,8 +5,6 @@
 }
 
 .back-button {
-  position: absolute;
-  left: 1rem;
   z-index: 50;
 }
 

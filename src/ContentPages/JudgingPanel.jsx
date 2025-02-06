@@ -13,7 +13,7 @@ const JudgingPanel = () => {
   const renderContent = () => {
     if (activePanel === "judges") {
       return (
-        <div className="judge-component">
+        <div className="flex flex-row gap-0 justify-center">
           <button
             className="back-button back-buttonn"
             onClick={() => setActivePanel("judgingPanel")}
@@ -31,7 +31,7 @@ const JudgingPanel = () => {
 
     if (activePanel === "mentors") {
       return (
-        <div className="mentor-component">
+        <div className="flex flex-row gap-0 justify-center">
           <button
             className="back-button back-buttonn"
             onClick={() => setActivePanel("judgingPanel")}
