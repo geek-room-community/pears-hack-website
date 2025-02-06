@@ -4,7 +4,7 @@
   gap: 10px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
+  margin-bottom: 7rem;
   overflow: hidden;
   /* border: 1px solid red; */
 }
@@ -14,5 +14,13 @@
     max-width: 70vw;
     margin-left: 0;
     margin-bottom: 16rem;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .team {
+    max-width: 70vw;
+    margin-left: 0;
+    margin-bottom: 4rem;
   }
 }

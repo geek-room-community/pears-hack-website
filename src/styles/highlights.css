@@ -148,3 +148,9 @@
     margin-right: auto;
   }
 }
+
+@media (max-width: 1536px) {
+  .highlights-container {
+    margin-bottom: 7rem;   
+  }
+}
