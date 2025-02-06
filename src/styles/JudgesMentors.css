@@ -2,15 +2,14 @@
 .main-panels {
   color: #fff;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   position: relative;
-  padding-right: 2rem;
   overflow-x: hidden;
-  width: 850px;
-  margin-top: 100px;
+  width: full;
   box-sizing: border-box;
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 /* Buttons container */
@@ -18,41 +17,39 @@
   display: flex;
   flex-direction: column;
   gap: 1.4rem;
-  align-items: center; 
-  margin-right: 7rem;
+  align-items: center;
 }
 
 /* Individual buttons */
 .buttonsss {
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   background-color: #222;
   border-radius: 4.8rem;
-  padding: 13px 15px;
   text-align: center;
   transition: all 0.3s ease;
   border: 2px solid;
   gap: 2rem;
-  width: 400px;
+  width: full;
 }
 
 /* Button sizes */
 .buttonsss:nth-child(1),
 .buttonsss:nth-child(5) {
   height: 81px;
-  margin-left:36rem;
+  margin-left: 22rem;
 }
 
 .buttonsss:nth-child(2),
 .buttonsss:nth-child(4) {
   height: 82px;
-  margin-left: 20rem;
+  margin-left: 10rem;
 }
 
 .buttonsss:nth-child(3) {
   height: 83px;
-  margin-left: 8rem;
+  margin-left: 0rem;
 }
 
 /* Circular disc container */
@@ -70,7 +67,7 @@
 
 /* Panel info container */
 .judge-title-panel-infos {
-  padding:1.7rem ;
+  padding: 1.7rem;
   padding-top: 1.9rem;
   padding-bottom: 1.9rem;
   display: flex;
@@ -87,13 +84,13 @@
   font-weight: 200;
   letter-spacing: 0.4px;
   text-align: left;
-  color: #B6DD48;
+  color: #b6dd48;
 }
 
 /* Green subtitle text */
 .panel-span-titles {
   font-size: 1rem;
-  color: #B6DD48;
+  color: #b6dd48;
   font-weight: 300;
 }
 
@@ -124,35 +121,32 @@
 @media screen and (max-width: 710px) {
   /* Adjust main panel container for smaller screens */
   .main-panels {
-    height: auto; 
-    width: 100%;
-    justify-content: center; 
-    margin-bottom: 5.1rem;
-    margin-top: 0.1px;
-    margin-left: 3rem;
+    justify-content: center;
+    margin-bottom: 15rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* Buttons container */
   .buttonss {
     align-items: center;
-    gap: 15px; 
+    gap: 15px;
   }
 
   /* Individual buttons */
   .buttonsss {
-    border-radius: 2.4rem; 
+    border-radius: 2.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 245px;
     padding: 0.2rem;
-    margin: 0;
   }
 
   /* Button heights for mobile */
   .buttonsss:nth-child(1),
   .buttonsss:nth-child(5) {
-    height: 59px; 
+    height: 59px;
     padding: 0.8rem 1.4rem;
     margin-left: 6rem;
   }
@@ -160,7 +154,7 @@
   .buttonsss:nth-child(2),
   .buttonsss:nth-child(4) {
     height: 61px;
-    margin-left:2rem;
+    margin-left: 2rem;
     padding: 0.8rem 1.4rem;
   }
 
@@ -172,20 +166,20 @@
 
   /* Circular disc container */
   .logo-judges {
-    width: 60px; 
+    width: 60px;
     height: 60px;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 
   /* Panel info container */
   .judge-title-panel-infos {
-    align-items: center; 
+    align-items: center;
     text-align: center;
   }
 
   /* Judge title text */
   .titles {
-    font-size: 17px; 
+    font-size: 17px;
   }
 
   /* Green subtitle text */
@@ -196,12 +190,12 @@
   /* Social media icons */
   .social-icons {
     margin-top: 0.2px;
-    justify-content: center; 
-    gap: 4px; 
+    justify-content: center;
+    gap: 4px;
   }
 
   .icon {
-    font-size: 12px; 
+    font-size: 12px;
   }
 }
 
@@ -209,19 +203,19 @@
   /* Further adjustments for very small screens */
   .buttonsss {
     padding: 10px 12px;
-    gap: 8px; 
+    gap: 8px;
   }
 
   .logo-judges {
-    width: 40px; 
+    width: 40px;
     height: 40px;
   }
 
   .titles {
-    font-size: 16px; 
+    font-size: 16px;
   }
 
   .icon {
-    font-size: 14px; 
+    font-size: 14px;
   }
 }

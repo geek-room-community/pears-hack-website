@@ -7,7 +7,7 @@ import Twitter from "../SVGs/contacttwitter.svg";
 
 const Contact = () => {
   return (
-    <div className="bg-[#2A2A2A] shadow-lg p-3 pt-1 md:pt-4 md:p-6 rounded-3xl flex flex-col justify-center gap-1 md:gap-5  md:mx-16  w-3/4 md:w-11/12 md:max-w-md mt-0.1 md:mt-14 mx-auto  h-auto mb:2 ">
+    <div className="bg-[#2A2A2A] mb-56 shadow-lg p-3 pt-1 md:pt-4 md:p-6 rounded-3xl flex flex-col justify-center gap-1 md:gap-5  md:mx-16  w-3/4 md:w-11/12 md:max-w-md mt-0.1 md:mt-14 mx-auto  h-auto">
       <h2 className="font-['Bebas_Neue'] text-3xl md:text-4xl flex gap-2 items-baseline justify-center">
         <span className="text-[#B6DD48] text-3xl md:text-4xl font-['Bebas_Neue']">
           GOT
@@ -28,7 +28,7 @@ const Contact = () => {
           </span>
         </a>
       </div>
-      <p className="font-['VT323'] text-lg md:text-2xl text-left">
+      <p className="font-['VT323'] text-lg xl:text-2xl text-left">
         Also checkout our social handles :
       </p>
       <div className="flex flex-col gap-1 md:gap-3">
@@ -56,7 +56,7 @@ const Contact = () => {
             src={Email}
             alt="email icon"
           />
-          <span className="font-['VT323'] text-lg md:text-xl tracking-[2px]">
+          <span className="font-['VT323'] text-lg xl:text-xl tracking-[2px]">
             community@geekroom.in
           </span>
         </a>
