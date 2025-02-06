@@ -75,7 +75,7 @@ const Promotion = () => {
   return (
     <section className="flex flex-col justify-start gap-8 xl:gap-20 mt-16 md:mt-10 2xl:mt-10 h-[95vh] w-[23rem] md:w-[30rem] lg:w-[40rem] xl:w-[50rem] overflow-hidden">
       <Link to="/">
-        <button className="back-button ml-3">
+        <button className="bg-[#222] rounded-full border-2 border-[#b6e33e] px-4 py-1 flex items-center justify-center">
           <img
             src={Frame || "/placeholder.svg"}
             alt="Back-Arrow"
