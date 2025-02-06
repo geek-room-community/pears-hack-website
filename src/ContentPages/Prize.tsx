@@ -60,7 +60,7 @@ const Prize = () => {
                         <div className='flex flex-row items-center justify-center'>
                             {prize.image.length > 0 ? prize.image.map((image) => (
                                 <img src={image} alt={prize.title} className={`${prize.class} object-contain`} />
-                            )) : <p className='text-white text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold -tracking-[0.06em] pt-6 xl:pt-12'>{prize.description}</p>}
+                            )) : <p className='text-white text-2xl md:text-4xl xl:text-6xl font-bold -tracking-[0.06em] pt-6 xl:pt-12'>{prize.description}</p>}
                         </div>
                         <h1 className='text-white text-sm lg:text-lg xl:text-2xl font-medium md:font-bold -tracking-[0.05em] px-6'>{prize.title}</h1>
                     </div>
