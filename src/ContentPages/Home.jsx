@@ -17,9 +17,9 @@ const Home = () => {
   return (
     <div className="md:mt-[10vh] flex flex-col items-center justify-center gap-5">
       <div className="lineptitle flex flex-row justify-start items-center md:gap-9 ml-[1vw] gap-5">
-        <div className="leftline bg-white h-[180px] md:h-[290px] w-2 rounded-full"></div>
+        <div className="leftline bg-white h-[180px] md:h-[220px] xl:h-[290px] w-2 rounded-full"></div>
         <div
-          className="title flex flex-col items-start justify-center text-[55px] leading-[1.2em] tracking-[4px] md:text-[85px] md:leading-[1.3em] md:tracking-[7px]"
+          className="title flex flex-col items-start justify-center text-[55px] leading-[1.2em] tracking-[4px] xl:text-[85px] xl:leading-[1.3em] md:tracking-[7px]"
           style={{ fontFamily: font }}
         >
           <div className="topimg flex flex-row items-center justify-center gap-4">
