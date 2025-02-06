@@ -121,10 +121,11 @@
 @media screen and (max-width: 710px) {
   /* Adjust main panel container for smaller screens */
   .main-panels {
+    height: auto;
+    width: 100%;
     justify-content: center;
-    margin-bottom: 15rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 5.1rem;
+    margin-left: 3rem;
   }
 
   /* Buttons container */
