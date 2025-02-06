@@ -21,6 +21,9 @@ span {
 
 .back-button {
   background-color: #222;
+  position: absolute;
+  top: 10rem;
+  left: 6rem;
   outline: none;
   border: 2px solid #b6dd48;
   color: #b6dd48;
@@ -106,7 +109,9 @@ span {
   }
 
   .back-buttonn {
-    margin-top: 4rem;
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
   }
 
   .panel-info img {

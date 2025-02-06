@@ -36,18 +36,18 @@
 .buttonsss:nth-child(1),
 .buttonsss:nth-child(5) {
   height: 81px;
-  margin-left: 14rem;
+  margin-left: 9rem;
 }
 
 .buttonsss:nth-child(2),
 .buttonsss:nth-child(4) {
   height: 82px;
-  margin-left: 6rem;
+  margin-left: 4rem;
 }
 
 .buttonsss:nth-child(3) {
   height: 83px;
-  margin-left: -2rem;
+  margin-left: 0rem;
 }
 
 /* Circular disc container */
@@ -116,7 +116,7 @@
 }
 
 /* Responsive Design */
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 768px) {
   /* Adjust main panel container for smaller screens */
   .main-panels {
     height: auto;
@@ -124,6 +124,7 @@
     justify-content: center;
     margin-bottom: 5.1rem;
     margin-left: 3rem;
+    overflow: hidden;
   }
 
   /* Buttons container */
@@ -201,12 +202,13 @@
 @media screen and (max-width: 480px) {
   /* Further adjustments for very small screens */
   /* Buttons container */
+
   .buttonss {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 11rem;
-    margin-right: 5rem;
+    margin-right: 8rem;
   }
 
   .buttonsss {
