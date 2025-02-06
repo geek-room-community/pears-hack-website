@@ -7,28 +7,27 @@ import Twitter from "../SVGs/contacttwitter.svg";
 
 const Contact = () => {
   return (
-    <div className="bg-[#2A2A2A] mb-56 shadow-lg p-3 pt-1 md:pt-4 md:p-6 rounded-3xl flex flex-col justify-center gap-1 md:gap-5  md:mx-16  w-3/4 md:w-11/12 md:max-w-md mt-0.1 md:mt-14 mx-auto  h-auto">
+    <div className="bg-[#2A2A2A] mb-64 shadow-lg p-6 rounded-3xl flex flex-col justify-center gap-1 md:gap-5 w-11/12 md:w-full md:max-w-md mt-2 mx-auto h-auto">
       <h2 className="font-['Bebas_Neue'] text-3xl md:text-4xl flex gap-2 items-baseline justify-center">
         <span className="text-[#B6DD48] text-3xl md:text-4xl font-['Bebas_Neue']">
           GOT
         </span>{" "}
         A QUERY?
       </h2>
-      <p className="font-['VT323'] text-lg md:text-2xl text-left">
+      <p className="font-vt323 text-lg md:text-2xl text-left">
         We're here to assist you! Join us on Keet:
       </p>
       <div className="  ">
         <a
           href="https://keetlink.vercel.app/"
-          className="flex items-center justify-center"
-          style={{ fontFamily: "'VT323', monospace" }}
+          className="flex items-center justify-center font-vt323"
         >
-          <span className="text-lg md:text-xl border-[#B6DD48] bg-[#B6DD48] hover:text-[#B6DD48] hover:bg-transparent p-2  border rounded-md font-['VT323'] flex items-center justify-center text-black">
+          <span className="text-lg md:text-xl border-[#B6DD48] bg-[#B6DD48] hover:text-[#B6DD48] hover:bg-transparent p-2  border rounded-md font-vt323 flex items-center justify-center text-black">
             JOIN US ON KEET
           </span>
         </a>
       </div>
-      <p className="font-['VT323'] text-lg xl:text-2xl text-left">
+      <p className="font-vt323 text-lg xl:text-2xl text-left">
         Also checkout our social handles :
       </p>
       <div className="flex flex-col gap-1 md:gap-3">
@@ -43,7 +42,7 @@ const Contact = () => {
             src={Web}
             alt="website icon"
           />
-          <span className="font-['VT323'] tracking-[2px] text-lg">
+          <span className="font-vt323 tracking-[2px] text-lg">
             www.geekroom.in
           </span>
         </a>
@@ -56,7 +55,7 @@ const Contact = () => {
             src={Email}
             alt="email icon"
           />
-          <span className="font-['VT323'] text-lg xl:text-xl tracking-[2px]">
+          <span className="font-vt323 text-lg xl:text-xl tracking-[2px]">
             community@geekroom.in
           </span>
         </a>
@@ -71,7 +70,7 @@ const Contact = () => {
             src={LinkedIn}
             alt="linkedin icon"
           />
-          <span className="font-['VT323'] text-lg tracking-[2px]">
+          <span className="font-vt323 text-lg tracking-[2px]">
             Geek Suite
           </span>
         </a>
@@ -86,7 +85,7 @@ const Contact = () => {
             src={Twitter}
             alt="twitter icon"
           />
-          <span className="font-['VT323'] tracking-[2px] text-lg">
+          <span className="font-vt323 tracking-[2px] text-lg">
             Pears_p2p
           </span>
         </a>

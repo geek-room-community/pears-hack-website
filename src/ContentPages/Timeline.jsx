@@ -45,7 +45,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center w-full h-screen mb-10 sm:mt-28 ml-0 sm:ml-11">
+    <div className="flex justify-center items-center w-full mb-60 lg:mb-20">
       <div className="relative w-[360px] sm:w-[500px]">
         {/* Vertical Line */}
         <div className="absolute left-1/2 transform -translate-x-1/2 w-[2px] bg-[#b6dd48] h-full">
@@ -53,7 +53,7 @@ const Timeline = () => {
         </div>
 
         {/* Timeline Items */}
-        <div className="space-y-16 md:space-y-24 xl:space-y-28 relative">
+        <div className="space-y-24 xl:space-y-28 relative">
           {timelineItems.map((item) => (
             <div key={item.id} className="flex flex-col items-center relative">
               {/* Outer Circle */}

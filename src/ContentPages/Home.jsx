@@ -20,15 +20,15 @@ const Home = () => {
   }, [isModalOpen]);
 
   return (
-    <div className="mb-[27vh] md:mb-[18vh] lg:mb-[14vh] xl:mb-[6vh] flex flex-col items-center justify-center gap-3">
-      <div className="lineptitle flex flex-row justify-start items-center md:gap-9 ml-[1vw] gap-5">
+    <div className="mb-[27vh] md:mb-[18vh] lg:mb-[14vh] xl:mb-[9vh] flex flex-col justify-center md:items-start items-center gap-4">
+      <div className="lineptitle flex flex-row justify-start items-center md:gap-9 gap-5">
         <div className="leftline bg-white h-[180px] xl:h-[290px] w-2 rounded-full"></div>
         <div
           className="title flex flex-col items-start justify-center text-[55px] leading-[1.2em] tracking-[4px] xl:text-[85px] xl:leading-[1.2em] md:tracking-[7px]"
           style={{ fontFamily: font }}
         >
           <div className="topimg flex flex-row items-center justify-center gap-4">
-            <img src={PearLogo1} alt="" className="h-12 mb-4 md:h-20" />
+            <img src={PearLogo1} alt="" className="h-[3.5rem] mb-2 lg:mb-4 xl:h-20" />
           </div>
           <div id="gleen" className="text-[#b6dd48]">
             GLOBAL
@@ -61,7 +61,7 @@ const Home = () => {
         </button>
       </div>
 
-      <div className="timer-container">
+      <div className="w-fit mx-auto">
         <Timer />
       </div>
 

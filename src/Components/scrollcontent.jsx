@@ -28,7 +28,7 @@ const ScrollContent = ({ currentIndex, handleNext, handlePrevious }) => {
   ];
 
   return (
-    <div className="mt-[12vh] xl:mt-[10vh] flex flex-col justify-between items-center md:items-start md:ml-[calc(10%-10px)] h-screen w-screen">
+    <div className="mt-[12vh] xl:mt-[10vh] flex flex-col gap-2 justify-between items-center md:items-start md:ml-[calc(10%-10px)] h-screen w-screen">
       <div className="hidden md:flex z-50 flex-row items-center justify-between px-2 py-2 w-3/5 rounded-full bg-[#2a2a2a]">
         <div className="flex flex-row items-center justify-center gap-2 bg-[#242323] rounded-full px-2">
           <img src={PearLogo} alt="PearsLogo" className="w-12 h-12" />
