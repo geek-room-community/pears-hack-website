@@ -7,7 +7,7 @@ import Twitter from "../SVGs/contacttwitter.svg";
 
 const Contact = () => {
   return (
-    <div className="bg-[#2A2A2A] mb-64 xl:mb-32 2xl:mb-64 shadow-lg p-6 rounded-3xl flex flex-col justify-center gap-1 md:gap-5 w-11/12 md:w-full md:max-w-md mx-auto h-auto">
+    <div className="bg-[#2A2A2A] mb-64 xl:mb-32 2xl:mb-16 shadow-lg p-6 rounded-3xl flex flex-col justify-center gap-1 md:gap-5 w-11/12 md:w-full md:max-w-md mx-auto h-auto">
       <h2 className="font-['Bebas_Neue'] text-3xl md:text-4xl flex gap-2 items-baseline justify-center">
         <span className="text-[#B6DD48] text-3xl md:text-4xl font-['Bebas_Neue']">
           GOT
