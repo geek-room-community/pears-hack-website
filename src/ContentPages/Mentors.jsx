@@ -167,15 +167,15 @@ const Carousel = ({ mentors, direction = "left" }) => {
   );
 };
 
-const Mentors = () => {
+const Mentors = ({ setActivePanel }) => {
   // const halfIndex = Math.ceil(webdev.length / 2)
   // const topMentors = webdev.slice(0, halfIndex)
   // const bottomMentors = webdev.slice(halfIndex)
 
   return (
     <section className="flex flex-col justify-start gap-8 xl:gap-20 mt-16 md:mt-10 2xl:mt-10 h-[95vh] w-[23rem] md:w-[30rem] lg:w-[40rem] xl:w-[50rem] overflow-hidden">
-      <Link to="/">
-        <button className="bg-[#222] rounded-full border-2 border-[#b6e33e] px-4 py-1 flex items-center justify-center opacity-0">
+      <Link>
+        <button className="bg-[#222] rounded-full border-2 border-[#b6e33e] px-4 py-1 flex items-center justify-center" onClick={() => setActivePanel("judgingPanel")}>
           <img
             src={Frame || "/placeholder.svg"}
             alt="Back-Arrow"
