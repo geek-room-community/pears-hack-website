@@ -68,7 +68,7 @@ const JudgingPanel = () => {
           </div>
 
           <div
-            className="button flex items-center justify-start bg-[#222] rounded-[4.8rem] px-8 py-6 w-full h-32 gap-[25px]"
+            className="button mb-20 md:mb-0 flex items-center justify-start bg-[#222] rounded-[4.8rem] px-8 py-6 w-full h-32 gap-[25px]"
             onClick={() => setActivePanel("mentors")}
           >
             <div className="logo-judge flex justify-center items-center bg-[#818181] mr-12 w-[90px] h-[90px] rounded-full flex-shrink-0">

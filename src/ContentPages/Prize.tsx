@@ -53,7 +53,7 @@ const Prize = () => {
     ];
 
     return (
-        <div className='h-fit overflow-y-auto scrollbar-hide'>
+        <div className='h-fit overflow-y-auto scrollbar-hide mb-20 md:mb-0'>
             <div className='w-full h-full grid grid-cols-2 gap-2 lg:grid-cols-3 md:gap-x-4 lg:gap-x-6 lg:gap-y-4'>
                 {prizeData.map((prize) => (
                     <div key={prize.id} className='w-[170px] h-full lg:w-[215px] lg:h-52 xl:w-[250px] xl:h-64 py-4 lg:py-8 bg-[#1A1A1A] rounded-3xl text-white flex flex-col items-center justify-between '>
