@@ -20,7 +20,7 @@ const Home = () => {
   }, [isModalOpen]);
 
   return (
-    <div className="mb-[27vh] md:mb-[18vh] lg:mb-[14vh] xl:mb-[19vh] 2xl:mb-20 flex flex-col justify-center lg:items-start items-center gap-4">
+    <div className="flex flex-col justify-center lg:items-start items-center gap-4 mb-20 md:mb-0">
       <div className="lineptitle flex flex-row justify-start items-center md:gap-9 gap-5">
         <div className="leftline bg-white h-[180px] xl:h-[290px] w-2 rounded-full"></div>
         <div

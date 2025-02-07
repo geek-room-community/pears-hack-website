@@ -15,7 +15,7 @@ const AboutUs = () => {
   }
 
   return (
-    <div className="mx-auto md:ml-0 max-w-[900px] bg-[#2a2a2a] py-2 px-3 xl:px-6 mb-48 xl:mb-28 2xl:mb-10 rounded-[2.3rem] text-white w-[80%] md:w-[95%] lg:w-[90%] max-h-[60vh] md:max-h-[80vh] overflow-y-auto scrollbar-hide">
+    <div className="mx-auto md:ml-0 mb-20 md:mb-0 max-w-[900px] bg-[#2a2a2a] py-2 px-3 xl:px-6 rounded-[2.3rem] text-white w-[80%] md:w-[95%] lg:w-[90%] max-h-[60vh] md:max-h-[80vh] overflow-y-auto scrollbar-hide">
       <div className="flex justify-center md:mb-4">
         <div className="flex items-center justify-center bg-[#2a2a2a] rounded-full px-4 py-1">
           <img src={pearContent.logo || "/placeholder.svg"} alt="Pear Logo" className="w-[300px] h-16 xl:w-[700px] xl:h-40 md:w-[500px] md:h-20" />

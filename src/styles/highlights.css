@@ -11,19 +11,6 @@
   width: 80%;
   max-width: 70rem;
   height: 65vh;
-  margin-bottom: 5rem;
-}
-
-@media (max-width: 1536px) {
-  .highlights-container {
-    margin-bottom: 5rem;
-  }
-}
-
-@media (max-width: 1280px) {
-  .highlights-container {
-    margin-bottom: 7rem;
-  }
 }
 
 .grid-item {
@@ -100,7 +87,6 @@
     gap: 0.7rem;
     width: 100%;
     height: 50vh;
-    margin-bottom: 12rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -155,8 +141,8 @@
     gap: 0.7rem;
     width: 90%;
     height: 50vh;
-    margin-bottom: 12rem;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5rem;
   }
 }

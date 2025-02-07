@@ -24,7 +24,7 @@ const JudgingPanel = () => {
               className="back-arrow w-[18px] h-8 mr-2"
             />
           </button>
-          <Judges />
+          <Judges setActivePanel={setActivePanel} />
         </div>
       );
     }
@@ -32,7 +32,7 @@ const JudgingPanel = () => {
     if (activePanel === "mentors") {
       return (
         <div className="flex flex-row gap-0 justify-center xl:mb-20 2xl:mb-0">
-          <button
+          {/* <button
             className="back-button back-buttonn"
             onClick={() => setActivePanel("judgingPanel")}
           >
@@ -41,15 +41,15 @@ const JudgingPanel = () => {
               alt="Back-Arrow"
               className="back-arrow w-[18px] h-8 mr-2"
             />
-          </button>
-          <Mentors />
+          </button> */}
+          <Mentors setActivePanel={setActivePanel} />
         </div>
       );
     }
 
     // Default view for Judging Panel
     return (
-      <div className="mb-[30vh] md:mb-28 xl:mb-60 2xl:mb-40 mx-auto md:mx-0 text-white h-auto flex flex-col items-center justify-center">
+      <div className="mb-10 mx-auto md:mx-0 text-white h-auto flex flex-col items-center justify-center">
         <div className="buttons flex flex-col items-center gap-12">
           <div
             className="button flex items-center justify-start bg-[#222] rounded-[4.8rem] px-8 py-6 w-full h-32 gap-[25px]"
@@ -68,7 +68,7 @@ const JudgingPanel = () => {
           </div>
 
           <div
-            className="button flex items-center justify-start bg-[#222] rounded-[4.8rem] px-8 py-6 w-full h-32 gap-[25px]"
+            className="button mb-20 md:mb-0 flex items-center justify-start bg-[#222] rounded-[4.8rem] px-8 py-6 w-full h-32 gap-[25px]"
             onClick={() => setActivePanel("mentors")}
           >
             <div className="logo-judge flex justify-center items-center bg-[#818181] mr-12 w-[90px] h-[90px] rounded-full flex-shrink-0">

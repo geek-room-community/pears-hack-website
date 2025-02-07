@@ -45,7 +45,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center w-full mb-60 xl:mb-36 2xl:mb-20">
+    <div className="flex justify-center items-center w-full mb-20">
       <div className="relative w-[360px] sm:w-[500px]">
         {/* Vertical Line */}
         <div className="absolute left-1/2 transform -translate-x-1/2 w-[2px] bg-[#b6dd48] h-full">
