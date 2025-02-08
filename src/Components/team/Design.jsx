@@ -15,14 +15,9 @@ import Shreiya from "../../assets/team/design/Shreiya.jpg"
 import Pranshu from "../../assets/team/design/Pranshu.jpeg"
 import Simrat from "../../assets/team/design/Simrat.jpeg"
 import Aditya from "../../assets/team/design/Aditya.jpeg"
+import Himanshu from "../../assets/team/design/Himanshu.jpg"
 
 const des = [
-  {
-    name: "Akshat Kumar",
-    image: Akshat,
-    linkedin: "https://www.linkedin.com/in/akshat-kumar-40b991261",
-    github: "https://github.com/AKR4PC",
-  },
   {
     name: "Saad Salim",
     image: Saad,
@@ -40,6 +35,18 @@ const des = [
     image: Anushree,
     linkedin: "https://www.linkedin.com/in/anushree-558056292",
     github: "https://github.com/ashree2118",
+  },
+  {
+    name: "Himanshu Tanwar",
+    image: Himanshu,
+    linkedin: "https://www.linkedin.com/in/himanshu-tanwar-241615281",
+    github: "https://github.com",
+  },
+  {
+    name: "Akshat Kumar",
+    image: Akshat,
+    linkedin: "https://www.linkedin.com/in/akshat-kumar-40b991261",
+    github: "https://github.com/AKR4PC",
   },
   {
     name: "Shreiya Malla",

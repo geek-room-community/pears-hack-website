@@ -23,6 +23,9 @@ import Abdal from "../assets/mentors/Abdal.png";
 import Priya from "../assets/mentors/Priya.jpg";
 import Aryan from "../assets/mentors/Aryan.jpg";
 import Chinmay from "../assets/mentors/Chinmay.jpeg";
+import Ghosh from "../assets/mentors/Ghosh.png";
+import Krishna from "../assets/mentors/Krishna.jpeg";
+import Radhika from "../assets/mentors/Radhika.jpg";
 
 const Men = [
   {
@@ -120,6 +123,24 @@ const Men = [
     image: Chinmay,
     linkedin: "https://www.linkedin.com/in/chinmaypant",
     github: "https://github.com/chinmaypant21",
+  },
+  {
+    name: "Aryan Ghosh",
+    image: Ghosh,
+    linkedin: "http://linkedin.com/in/aryanghosh001",
+    github: "http://github.com/superbaryan",
+  },
+  {
+    name: "Krishna",
+    image: Krishna,
+    linkedin: "https://www.linkedin.com/company/themisty/",
+    github: "https://github.com/iamkrishnagupta10",
+  },
+  {
+    name: "Radhika Patwari",
+    image: Radhika,
+    linkedin: "https://www.linkedin.com/in/radhika-patwari-334541172/",
+    github: "https://github.com/rsrkpatwari1234",
   },
 ];
 
