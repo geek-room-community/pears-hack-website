@@ -10,6 +10,7 @@ import Frame from "../../SVGs/Frame.svg"
 import Harshit from "../../assets/team/promotion/Harshit.jpg"
 import Suresh from "../../assets/team/promotion/Suresh.jpg"
 import Yash from "../../assets/team/promotion/Yash.jpg"
+import Ronit from "../../assets/team/promotion/Ronit.jpg"
 
 const prom = [
   {
@@ -29,6 +30,12 @@ const prom = [
     image: Yash,
     linkedin: "https://www.linkedin.com/in/yash-varma-",
     github: "https://github.com/YASH2204V",
+  },
+  {
+    name: "Ronit  Mathur",
+    image: Ronit,
+    linkedin: "https://www.linkedin.com",
+    github: "https://github.com",
   },
 ]
 

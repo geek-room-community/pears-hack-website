@@ -10,6 +10,7 @@ import Frame from "../../SVGs/Frame.svg";
 import Manass from "../../assets/team/leadorg/Manas.jpeg";
 import Vedant from "../../assets/team/leadorg/Vedant.jpg";
 import Akshay from "../../assets/team/leadorg/Akshay.jpg";
+import Samrat from "../../assets/team/leadorg/Samrat.jpg";
 
 const leadorg = [
   {
@@ -29,6 +30,12 @@ const leadorg = [
     image: Akshay,
     linkedin: "https://www.linkedin.com/in/akshay-kumar-sharma-devvoyager",
     github: "http://github.com/Cappybara12",
+  },
+  {
+    name: "Samrat Kalki",
+    image: Samrat,
+    linkedin: "https://www.linkedin.com/in/samrat-kalki-a657b5291",
+    github: "https://github.com/SAMRATKALKI",
   },
 ];
 
