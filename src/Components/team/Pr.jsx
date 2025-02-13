@@ -11,6 +11,7 @@ import Aditey from "../../assets/team/PR/Aditey.jpg"
 import Shivam from "../../assets/team/PR/Shivam.png"
 import Kavya from "../../assets/team/PR/Kavya.jpg"
 import Dewansh from "../../assets/team/PR/Dewansh.jpg"
+import Samrat from "../../assets/team/PR/Samrat.jpg";
 
 const pr = [
   {
@@ -36,6 +37,12 @@ const pr = [
     image: Dewansh,
     linkedin: "https://www.linkedin.com",
     github: "https://github.com/dewanshshekhar",
+  },
+  {
+    name: "Samrat Kalki",
+    image: Samrat,
+    linkedin: "https://www.linkedin.com/in/samrat-kalki-a657b5291",
+    github: "https://github.com/SAMRATKALKI",
   },
 ]
 
