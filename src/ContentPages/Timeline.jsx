@@ -28,15 +28,15 @@ const Timeline = () => {
     },
     {
       id: 4,
-      title: "MENTORING - ROUND 2",
+      title: "Judging - ROUND",
       completed: true,
       align: "left",
-      Date: "9 Mar 2025 6:00PM-IST",
+      Date: "10 Mar 2025 6:00PM-IST",
       dateAlign: "right",
     },
     {
       id: 5,
-      title: "RESULTS - ROUND 2",
+      title: "RESULTS - Final ROUND",
       completed: true,
       align: "right",
       Date: "11 Mar 2025",
